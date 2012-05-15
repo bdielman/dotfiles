@@ -13,6 +13,8 @@
   plog = log --format=\"%Cgreen%h%Creset %s (%Cred%cr%Creset, %Cgreen%an%Creset)\"
   type = cat-file -t
   dump = cat-file -p
+  trim = !git remote prune origin && git gc
+  cleanup = !git clean -df && git stash clear
 [core]
   excludesfile = /Users/braddielman/.gitignore_global
   editor = mvim -v
