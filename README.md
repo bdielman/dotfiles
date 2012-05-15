@@ -18,7 +18,7 @@ Initial effort to version control these files. Next steps:
 ```
 git clone git@github.com:bdielman/dotfiles.git ~/.dotfiles
 cd ~/.dotfiles
-bash bootstrap.sh
+bash symlinkit.sh
 ```
 
-Running the bootstrap script will delete and recreate the symlinks in HOME.
+Running the symlinkit script will delete and recreate the symlinks in HOME.
