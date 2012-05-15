@@ -14,11 +14,11 @@
   type = cat-file -t
   dump = cat-file -p
 [core]
-	excludesfile = /Users/braddielman/.gitignore_global
+  excludesfile = /Users/braddielman/.gitignore_global
   editor = mvim -v
   quotepath = false
-	autocrlf = input
-	safecrlf = true
+  autocrlf = input
+  safecrlf = true
 [color]
   ui = auto
   branch = auto
@@ -26,8 +26,8 @@
   interactive = auto
   status = auto
 [difftool "Kaleidoscope"]
-	cmd = ksdiff-wrapper git \"$LOCAL\" \"$REMOTE\"
+  cmd = ksdiff-wrapper git \"$LOCAL\" \"$REMOTE\"
 [difftool]
-	prompt = false
+  prompt = false
 [diff]
-	tool = Kaleidoscope
+  tool = Kaleidoscope
