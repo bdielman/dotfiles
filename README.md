@@ -13,6 +13,8 @@ Initial effort to version control these files. Next steps:
 * Vim (7.3+) - MacVim installed via [Homebrew](http://mxcl.github.com/homebrew/)
 * [Kaleidoscope](http://www.kaleidoscopeapp.com/) - Gitconfig points to this app for diffs
 
+### The Setup
+
 ```
 git clone git@github.com:bdielman/dotfiles.git ~/.dotfiles
 cd ~/.dotfiles
