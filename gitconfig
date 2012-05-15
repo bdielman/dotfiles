@@ -1,0 +1,33 @@
+[user]
+  email = bdielman@gmail.com
+  name = Brad Dielman
+[alias]
+  st = status
+  ci = commit
+  br = branch
+  co = checkout
+  df = diff
+  lg = log -p
+  amend = commit --amend
+  hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+  plog = log --format=\"%Cgreen%h%Creset %s (%Cred%cr%Creset, %Cgreen%an%Creset)\"
+  type = cat-file -t
+  dump = cat-file -p
+[core]
+	excludesfile = /Users/braddielman/.gitignore_global
+  editor = mvim -v
+  quotepath = false
+	autocrlf = input
+	safecrlf = true
+[color]
+  ui = auto
+  branch = auto
+  diff = auto
+  interactive = auto
+  status = auto
+[difftool "Kaleidoscope"]
+	cmd = ksdiff-wrapper git \"$LOCAL\" \"$REMOTE\"
+[difftool]
+	prompt = false
+[diff]
+	tool = Kaleidoscope
