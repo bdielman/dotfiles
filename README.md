@@ -20,5 +20,13 @@ git clone git@github.com:bdielman/dotfiles.git ~/.dotfiles
 cd ~/.dotfiles
 bash symlinkit.sh
 ```
-
 Running the symlinkit script will delete and recreate the symlinks in HOME.
+
+## Acknowledgements
+
+I have a few people to thank for help and inspiration in getting this up and running:
+
+* [Nate Klaiber](https://github.com/nateklaiber)
+* [Joe Fiorini](https://github.com/joefiorini)
+* [Jonathan Penn](https://github.com/jonathanpenn)
+* [Nicolas Gallagher](https://github.com/necolas)
