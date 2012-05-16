@@ -15,11 +15,10 @@ Initial effort to version control these files. Next steps:
 
 ### The Setup
 
-```
-git clone git@github.com:bdielman/dotfiles.git ~/.dotfiles
-cd ~/.dotfiles
-bash symlinkit.sh
-```
+  git clone git@github.com:bdielman/dotfiles.git ~/.dotfiles
+  cd ~/.dotfiles
+  bash symlinkit.sh
+
 Running the symlinkit script will delete and recreate the symlinks in HOME.
 
 ## Acknowledgements
