@@ -15,3 +15,5 @@ relink .git-completion.sh ~/.dotfiles/git-completion.sh
 relink .gitconfig ~/.dotfiles/gitconfig
 relink .gitignore_global ~/.dotfiles/gitignore_global
 relink .vimrc ~/.dotfiles/vimrc
+
+echo "Dotfiles update complete"
