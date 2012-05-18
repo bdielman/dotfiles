@@ -3,7 +3,6 @@
 Initial effort to version control these files. Next steps:
 
 * Break out `bash_profile` and `bashrc` into smaller chunks for environment and aliases
-* Move `.vim` folder into dotfiles and setup vim bundles as git submodules
 
 ## How to setup on a new machine
 
