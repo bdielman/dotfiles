@@ -44,6 +44,8 @@ $ git commit -m "Add a new submodule: one-submodule"
 $ bash symlinkit.sh
 ```
 
+Running the symlinkit script will delete (if they already exist) and recreate the symlinks in HOME.
+
 #### Update all submodules at once
 ```bash
 # Navigate to your dotfiles directory
@@ -51,8 +53,6 @@ $ cd ~/.dotfiles
 # Run this one line in bash
 $ git submodule foreach git pull origin master
 ```
-
-Running the symlinkit script will delete (if they already exist) and recreate the symlinks in HOME.
 
 ## Acknowledgements
 
