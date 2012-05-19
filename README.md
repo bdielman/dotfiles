@@ -1,9 +1,5 @@
 # My Dotfiles Setup
 
-Initial effort to version control these files. Next steps:
-
-* Break out `bash_profile` and `bashrc` into smaller chunks for environment and aliases
-
 ## How to setup on a new machine
 
 ### Prerequisites
@@ -14,11 +10,28 @@ Initial effort to version control these files. Next steps:
 
 ### The Setup
 
-    git clone git@github.com:bdielman/dotfiles.git ~/.dotfiles
-    cd ~/.dotfiles
-    bash symlinkit.sh
+#### Create the dotfiles directory
 
-Running the symlinkit script will delete and recreate the symlinks in HOME.
+    $ mkdir .dotfiles
+    $ git clone git@github.com:bdielman/dotfiles.git ~/.dotfiles
+    $ cd ~/.dotfiles
+
+#### Initialize and Setup the Vim bundles
+
+    # Initialize the submodules
+    git submodule init
+    # Clone the submodules
+    git submodule update
+    # Stage the changes
+    git add vim/bundle/one-submodule
+    # Commit the changes
+    git commit -m "Add a new submodule: one-submodule"
+
+#### Symlink the new files to HOME
+
+    $ bash symlinkit.sh
+
+Running the symlinkit script will delete (if they already exist) and recreate the symlinks in HOME.
 
 ## Acknowledgements
 
