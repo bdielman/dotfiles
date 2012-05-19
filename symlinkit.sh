@@ -9,12 +9,12 @@ function relink() {
 
 cd ~
 
-relink .bash_profile ~/.dotfiles/bash_profile
-relink .bashrc ~/.dotfiles/bashrc
-relink .git-completion.sh ~/.dotfiles/git-completion.sh
-relink .gitconfig ~/.dotfiles/gitconfig
-relink .gitignore_global ~/.dotfiles/gitignore_global
-relink .vimrc ~/.dotfiles/vimrc
+relink .bash_profile ~/.dotfiles/bash/bash_profile
+relink .bashrc ~/.dotfiles/bash/bashrc
+relink .git-completion.sh ~/.dotfiles/git/git-completion.sh
+relink .gitconfig ~/.dotfiles/git/gitconfig
+relink .gitignore_global ~/.dotfiles/git/gitignore_global
+relink .vimrc ~/.dotfiles/vim/vimrc
 relink .vim ~/.dotfiles/vim
 
 echo "Dotfiles update complete"
