@@ -12,24 +12,30 @@
 
 #### Create the dotfiles directory
 
-    $ mkdir .dotfiles
-    $ git clone git@github.com:bdielman/dotfiles.git ~/.dotfiles
-    $ cd ~/.dotfiles
+```bash
+$ mkdir .dotfiles
+$ git clone git@github.com:bdielman/dotfiles.git ~/.dotfiles
+$ cd ~/.dotfiles
+```
 
 #### Initialize and Setup the Vim bundles
 
-    # Initialize the submodules
-    git submodule init
-    # Clone the submodules
-    git submodule update
-    # Stage the changes
-    git add vim/bundle/one-submodule
-    # Commit the changes
-    git commit -m "Add a new submodule: one-submodule"
+```bash
+# Initialize the submodules
+$ git submodule init
+# Clone the submodules
+$ git submodule update
+# Stage the changes
+$ git add vim/bundle/one-submodule
+# Commit the changes
+$ git commit -m "Add a new submodule: one-submodule"
+```
 
 #### Symlink the new files to HOME
 
-    $ bash symlinkit.sh
+```bash
+$ bash symlinkit.sh
+```
 
 Running the symlinkit script will delete (if they already exist) and recreate the symlinks in HOME.
 
