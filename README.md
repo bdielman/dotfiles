@@ -18,13 +18,20 @@ $ git clone git@github.com:bdielman/dotfiles.git ~/.dotfiles
 $ cd ~/.dotfiles
 ```
 
-#### Initialize and Setup the Vim bundles
+#### Register and clone the Vim bundles
 
 ```bash
-# Initialize the submodules
+# Register the submodules
 $ git submodule init
 # Clone the submodules
 $ git submodule update
+```
+
+#### Add new submodules
+
+```bash
+# Add the submodule
+$ git submodule add git://example.com/remote/path/to/repo.git vim/bundle/one-submodule
 # Stage the changes
 $ git add vim/bundle/one-submodule
 # Commit the changes
@@ -35,6 +42,14 @@ $ git commit -m "Add a new submodule: one-submodule"
 
 ```bash
 $ bash symlinkit.sh
+```
+
+#### Update all submodules at once
+```bash
+# Navigate to your dotfiles directory
+$ cd ~/.dotfiles
+# Run this one line in bash
+$ git submodule foreach git pull origin master
 ```
 
 Running the symlinkit script will delete (if they already exist) and recreate the symlinks in HOME.
