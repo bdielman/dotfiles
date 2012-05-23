@@ -47,6 +47,7 @@ $ bash symlinkit.sh
 Running the symlinkit script will delete (if they already exist) and recreate the symlinks in HOME.
 
 #### Update all submodules at once
+
 ```bash
 # Navigate to your dotfiles directory
 $ cd ~/.dotfiles

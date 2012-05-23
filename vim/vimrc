@@ -28,6 +28,12 @@ command! Q :q
 command! WQ :wq
 command! Wq :wq
 
+" Shortcuts to make file navigation easier
+map <leader>ew :e <C-R>=expand("%:p:h") . "/" <CR>
+map <leader>es :sp <C-R>=expand("%:p:h") . "/" <CR>
+map <leader>ev :vsp <C-R>=expand("%:p:h") . "/" <CR>
+map <leader>et :tabe <C-R>=expand("%:p:h") . "/" <CR>
+
 " Why is this not a default
 set hidden
 
@@ -85,4 +91,4 @@ set noswapfile
 
 " NERDTree configuration
 let NERDTreeIgnore=['\.rbc$', '\~$']
-map <Leader>n :NERDTreeToggle<CR>
+map <leader>n :NERDTreeToggle<CR>
