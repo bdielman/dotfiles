@@ -38,10 +38,6 @@
 	path = vim/bundle/nerdtree
 	url = git://github.com/scrooloose/nerdtree.git
   ignore = dirty
-[submodule "vim/bundle/nerdcommenter"]
-	path = vim/bundle/nerdcommenter
-	url = git://github.com/ddollar/nerdcommenter.git
-  ignore = dirty
 [submodule "vim/bundle/vim-mustache"]
 	path = vim/bundle/vim-mustache
 	url = git://github.com/juvenn/mustache.vim.git
