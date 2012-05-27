@@ -89,7 +89,3 @@ set laststatus=2
 set nobackup
 set nowritebackup
 set noswapfile
-
-" NERDTree configuration
-let NERDTreeIgnore=['\.rbc$', '\~$']
-map <leader>n :NERDTreeToggle<CR>
