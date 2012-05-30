@@ -22,11 +22,7 @@
   autocrlf = input
   safecrlf = true
 [color]
-  ui = auto
-  branch = auto
-  diff = auto
-  interactive = auto
-  status = auto
+  ui = true
 [difftool "Kaleidoscope"]
   cmd = ksdiff-wrapper git \"$LOCAL\" \"$REMOTE\"
 [difftool]
