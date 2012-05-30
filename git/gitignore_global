@@ -43,3 +43,7 @@ Thumbs.db
 nbproject
 *.sublime-project
 *.sublime-workspace
+
+# SASS Cache
+######################
+.sass-cache
