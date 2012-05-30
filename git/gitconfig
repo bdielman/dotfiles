@@ -9,8 +9,8 @@
   df = diff
   lg = log -p
   amend = commit --amend
-  hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
-  plog = log --format=\"%Cgreen%h%Creset %s (%Cred%cr%Creset, %Cgreen%an%Creset)\"
+  graph = log --pretty=nice --all --date-order --graph
+  plog = log --pretty=nice --all --date-order
   type = cat-file -t
   dump = cat-file -p
   trim = !git remote prune origin && git gc
@@ -29,3 +29,5 @@
   prompt = false
 [diff]
   tool = Kaleidoscope
+[pretty]
+  nice = "%C(yellow)%h%C(reset) %C(white)%s%C(cyan)%d%C(reset) -- %an; %ar"
