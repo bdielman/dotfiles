@@ -50,3 +50,7 @@
 	path = vim/bundle/vim-html5
 	url = git://github.com/othree/html5-syntax.vim.git
   ignore = dirty
+[submodule "vim/bundle/vim-rails"]
+	path = vim/bundle/vim-rails
+	url = git://github.com/tpope/vim-rails.git
+  ignore = dirty
