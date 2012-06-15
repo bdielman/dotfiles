@@ -8,6 +8,7 @@
   co = checkout
   df = diff
   lg = log -p
+  adda = add -A
   amend = commit --amend
   hist = log --pretty=nice --all --date-order --graph
   plog = log --pretty=nice --all --date-order
