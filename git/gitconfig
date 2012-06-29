@@ -6,12 +6,12 @@
   ci = commit
   br = branch
   co = checkout
-  df = diff
+  df = difftool
   lg = log -p
   adda = add -A
   amend = commit --amend
   hist = log --pretty=nice --all --date-order --graph
-  plog = log --pretty=nice --all --date-order
+  plog = log --pretty=nice --date-order
   type = cat-file -t
   dump = cat-file -p
   trim = !git remote prune origin && git gc
