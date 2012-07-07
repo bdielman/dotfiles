@@ -93,3 +93,8 @@ set laststatus=2
 set nobackup
 set nowritebackup
 set noswapfile
+
+" Disable error bells
+set noerrorbells
+set visualbell
+set t_vb=
