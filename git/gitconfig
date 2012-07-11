@@ -7,6 +7,7 @@
   br = branch
   co = checkout
   df = difftool
+  dh = !git diff HEAD HEAD~1
   lg = log -p
   adda = add -A
   amend = commit --amend
