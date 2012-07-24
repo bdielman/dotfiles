@@ -17,6 +17,7 @@
   dump = cat-file -p
   trim = !git remote prune origin && git gc
   cleanup = !git clean -df && git stash clear
+  who = shortlog -sn --
 [core]
   excludesfile = /Users/braddielman/.gitignore_global
   editor = mvim -v
