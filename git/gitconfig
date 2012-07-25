@@ -22,8 +22,6 @@
   excludesfile = /Users/braddielman/.gitignore_global
   editor = mvim -v
   quotepath = false
-  autocrlf = input
-  safecrlf = true
 [color]
   ui = true
 [difftool "Kaleidoscope"]
