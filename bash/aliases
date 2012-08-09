@@ -24,8 +24,6 @@ alias bails="bundle exec rails s"
 # Shortcuts
 alias dt="cd ~/desktop"
 alias www="cd ~/Sites"
-alias w3="cd ~/Sites/within3/bigred"
 alias cc="cd ~/Sites/CivicCommons"
 alias rb="cd ~/Sites/rtb-site"
-alias ux="cd ~/Sites/within3/ux"
 alias bd="cd ~/Sites/bd-site"
