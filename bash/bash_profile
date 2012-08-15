@@ -1,7 +1,8 @@
 source ~/.bashrc
 source ~/.git-completion.sh
 
-export CC=/usr/bin/gcc-4.2
+export CC=/usr/local/bin/gcc-4.2
+export CPPFLAGS=-I/opt/X11/include
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
 #PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 export PATH="/usr/local/bin:$PATH"
