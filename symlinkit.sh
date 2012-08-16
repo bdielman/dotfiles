@@ -16,5 +16,6 @@ relink .gitconfig ~/.dotfiles/git/gitconfig
 relink .gitignore_global ~/.dotfiles/git/gitignore_global
 relink .vimrc ~/.dotfiles/vim/vimrc
 relink .vim ~/.dotfiles/vim
+relink .ackrc ~/.dotfiles/ack/ackrc
 
 echo "Dotfiles update complete"
