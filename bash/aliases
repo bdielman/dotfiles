@@ -28,3 +28,6 @@ alias cc="cd ~/Sites/CivicCommons"
 alias rb="cd ~/Sites/rtb-site"
 alias bd="cd ~/Sites/bd-site"
 alias dip="cd ~/Sites/D-I-Public-Site"
+
+# Hub
+eval "`hub alias -s bash`"
