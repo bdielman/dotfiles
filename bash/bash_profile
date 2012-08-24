@@ -6,3 +6,4 @@ export CPPFLAGS=-I/opt/X11/include
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
 #PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 export PATH="/usr/local/bin:$PATH"
+export JRUBY_OPTS="-X-C --1.9" # Turning off JIT

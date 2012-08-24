@@ -9,6 +9,15 @@ alias ls="ls -lG"
 alias ll="ls -alh"
 alias lsa="ls -lGa"
 
+# Concatenate and print content of files (add line numbers)
+alias catn="cat -n"
+
+# Copy my public key to my clipboard
+alias pubkey="more ~/.ssh/id_rsa.pub | pbcopy | echo '=> Public key copied to pasteboard.'"
+
+# Flush DNS cache
+alias flushdns="dscacheutil -flushcache"
+
 # MySQL
 alias sqlstart="mysql.server start"
 alias sqlstop="mysql.server stop"
@@ -25,9 +34,9 @@ alias bails="bundle exec rails s"
 alias dt="cd ~/desktop"
 alias www="cd ~/Sites"
 alias cc="cd ~/Sites/CivicCommons"
-alias rb="cd ~/Sites/rtb-site"
 alias bd="cd ~/Sites/bd-site"
 alias dip="cd ~/Sites/D-I-Public-Site"
+alias ec="cd ~/Sites/ecommerce-templates"
 
 # Hub
 eval "`hub alias -s bash`"
