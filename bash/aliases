@@ -40,3 +40,7 @@ alias ec="cd ~/Sites/ecommerce-templates"
 
 # Hub
 eval "`hub alias -s bash`"
+
+# VHT
+alias qwm="host=10.30.0.234 middleman"
+alias qwe="host=10.10.0.106 middleman"
