@@ -34,3 +34,6 @@
   tool = Kaleidoscope
 [pretty]
   nice = "%C(yellow)%h%C(reset) %C(white)%s%C(cyan)%d%C(reset) -- %an; %ar"
+[git-pair]
+  authors = Joe Fiorini <joe@joefiorini.com>
+  authors = Brad Dielman <bdielman@gmail.com>
