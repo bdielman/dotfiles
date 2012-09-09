@@ -79,6 +79,9 @@ set expandtab
 " set lcs=tab:▸\ ,trail:·,eol:¬,nbsp:_
 " set list
 
+" Make omnicomplete a bit easier
+imap <Leader>o <C-x><C-o>
+
 " Searching
 set hlsearch
 set incsearch
