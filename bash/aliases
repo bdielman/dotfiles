@@ -37,10 +37,7 @@ alias cc="cd ~/Sites/CivicCommons"
 alias bd="cd ~/Sites/bd-site"
 alias dip="cd ~/Sites/D-I-Public-Site"
 alias ec="cd ~/Sites/ecommerce-templates"
+alias py="cd ~/Sites/puma-yoga"
 
 # Hub
 eval "`hub alias -s bash`"
-
-# VHT
-alias qwm="host=10.30.0.234 middleman"
-alias qwe="host=10.10.0.106 middleman"
