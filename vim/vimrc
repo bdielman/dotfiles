@@ -101,3 +101,6 @@ set noswapfile
 set noerrorbells
 set visualbell
 set t_vb=
+
+" Set Github Domains
+let g:fugitive_github_domains = ['https://example.com']

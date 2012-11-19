@@ -37,3 +37,5 @@
 [git-pair]
   authors = Joe Fiorini <joe@joefiorini.com>
   authors = Brad Dielman <bdielman@gmail.com>
+[web]
+	browser = open
