@@ -41,3 +41,6 @@ alias py="cd ~/Sites/puma-yoga"
 
 # Hub
 eval "`hub alias -s bash`"
+
+# Serve static
+alias sstatic="python -m SimpleHTTPServer"
