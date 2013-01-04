@@ -54,3 +54,7 @@
 	path = vim/bundle/vim-ack
 	url = git://github.com/mileszs/ack.vim.git
   ignore = dirty
+[submodule "vim/bundle/vim-handlebars"]
+	path = vim/bundle/vim-handlebars
+	url = git://github.com/nono/vim-handlebars.git
+  ignore = dirty
