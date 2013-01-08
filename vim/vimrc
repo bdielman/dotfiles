@@ -104,3 +104,6 @@ set t_vb=
 
 " Set Github Domains
 let g:fugitive_github_domains = ['https://example.com']
+
+" Add Handlebars support to Vim Commentary
+autocmd Syntax handlebars set commentstring={{!\ %s\ }}
