@@ -51,7 +51,7 @@ set showcmd
 set number
 
 " Yank from the cursor to the end of the line, to be consistent with C and D.
-nnoremap Y y
+nnoremap Y y$
 
 if has("gui_running")
   " Highlight current line
