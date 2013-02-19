@@ -33,11 +33,6 @@ alias bails="bundle exec rails s"
 # Shortcuts
 alias dt="cd ~/desktop"
 alias www="cd ~/Sites"
-alias rf="cd ~/Sites/Intention-Web"
-alias bd="cd ~/Sites/bd-site"
-alias dip="cd ~/Sites/D-I-Public-Site"
-alias ec="cd ~/Sites/ecommerce-templates"
-alias py="cd ~/Sites/puma-yoga"
 
 # Hub
 eval "`hub alias -s bash`"
