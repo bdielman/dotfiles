@@ -33,7 +33,7 @@ alias bails="bundle exec rails s"
 # Shortcuts
 alias dt="cd ~/desktop"
 alias www="cd ~/Sites"
-alias cc="cd ~/Sites/CivicCommons"
+alias rf="cd ~/Sites/Intention-Web"
 alias bd="cd ~/Sites/bd-site"
 alias dip="cd ~/Sites/D-I-Public-Site"
 alias ec="cd ~/Sites/ecommerce-templates"
