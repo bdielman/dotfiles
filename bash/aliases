@@ -1,5 +1,5 @@
 # MacVim
-alias e="mvim -v"
+alias vim="mvim -v"
 
 # Directory Stuff
 alias ..="cd .."
