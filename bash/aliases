@@ -39,3 +39,10 @@ eval "`hub alias -s bash`"
 
 # Serve static
 alias sstatic="python -m SimpleHTTPServer"
+
+# Functions
+cdvim () {
+  (
+    cd $1 && mvim .
+  )
+}
