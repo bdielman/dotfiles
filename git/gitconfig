@@ -8,12 +8,13 @@
   co = checkout
   df = difftool
   mt = mergetool
+  ds = diff --staged
   dh = !git diff HEAD HEAD~1
   lg = log -p
   pr = pull --rebase
   adda = add -A
   addp = add -p
-  amend = commit --amend
+  amend = commit --amend -C HEAD
   hist = log --pretty=nice --all --date-order --graph
   plog = log --pretty=nice --date-order
   type = cat-file -t
@@ -21,6 +22,7 @@
   trim = !git remote prune origin && git gc
   who = shortlog -sn --
   put = push origin HEAD
+  undo = reset --soft HEAD^
 [core]
   excludesfile = /Users/braddielman/.gitignore_global
   editor = mvim -v
