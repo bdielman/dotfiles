@@ -58,10 +58,6 @@
 	path = vim/bundle/vim-handlebars
 	url = git://github.com/nono/vim-handlebars.git
   ignore = dirty
-[submodule "vim/bundle/vim-jshint"]
-	path = vim/bundle/vim-jshint
-	url = git@github.com:walm/jshint.vim.git
-  ignore = dirty
 [submodule "vim/bundle/vim-repeat"]
 	path = vim/bundle/vim-repeat
 	url = git@github.com:tpope/vim-repeat.git
