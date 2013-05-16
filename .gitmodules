@@ -42,10 +42,6 @@
 	path = vim/bundle/vim-liquid
 	url = git://github.com/tpope/vim-liquid.git
   ignore = dirty
-[submodule "vim/bundle/vim-html5"]
-	path = vim/bundle/vim-html5
-	url = git://github.com/othree/html5-syntax.vim.git
-  ignore = dirty
 [submodule "vim/bundle/vim-ctrlp"]
 	path = vim/bundle/vim-ctrlp
 	url = git://github.com/kien/ctrlp.vim.git
