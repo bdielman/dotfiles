@@ -62,3 +62,7 @@
 	path = vim/bundle/vim-rails
 	url = git://github.com/tpope/vim-rails.git
   ignore = dirty
+[submodule "vim/bundle/vim-html5"]
+	path = vim/bundle/vim-html5
+	url = git@github.com:othree/html5.vim.git
+  ignore = dirty
