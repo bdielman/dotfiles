@@ -40,6 +40,12 @@ eval "`hub alias -s bash`"
 # Serve static
 alias sstatic="python -m SimpleHTTPServer"
 
+# Start Postgres
+alias pgstart="pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start"
+
+# Stop Postgres
+alias pgstop="killall pg_ctl"
+
 # Functions
 cdvim () {
   (
