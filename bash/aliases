@@ -44,11 +44,15 @@ alias sstatic="python -m SimpleHTTPServer"
 alias pgstart="pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start"
 
 # Stop Postgres
-alias pgstop="killall pg_ctl"
+alias pgstop="pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log stop"
 
 # Functions
 cdvim () {
   (
     cd $1 && mvim .
   )
+}
+
+add-host() {
+  echo $* | sudo tee -a /etc/hosts
 }
