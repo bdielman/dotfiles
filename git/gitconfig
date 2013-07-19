@@ -27,6 +27,7 @@
   excludesfile = /Users/braddielman/.gitignore_global
   editor = mvim -v
   quotepath = false
+	autocrlf = input
 [color]
   ui = true
 [pretty]
