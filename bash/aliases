@@ -35,7 +35,7 @@ alias dt="cd ~/desktop"
 alias www="cd ~/Sites"
 
 # Hub
-eval "`hub alias -s bash`"
+eval "$(hub alias -s)"
 
 # Serve static
 alias sstatic="python -m SimpleHTTPServer"
@@ -58,11 +58,11 @@ add-host() {
 }
 
 # Install a grunt plugin and save to devDependencies
-function gi() {
+function gr() {
   npm install --save-dev grunt-"$@"
 }
 
 # Install a grunt-contrib plugin and save to devDependencies
-function gci() {
+function grc() {
   npm install --save-dev grunt-contrib-"$@"
 }
