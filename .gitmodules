@@ -62,3 +62,7 @@
 	path = vim/bundle/vim-html5
 	url = git@github.com:othree/html5.vim.git
   ignore = dirty
+[submodule "vim/bundle/vim-emmet"]
+	path = vim/bundle/vim-emmet
+	url = git@github.com:mattn/emmet-vim.git
+  ignore = dirty
