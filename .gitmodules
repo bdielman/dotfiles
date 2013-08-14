@@ -34,10 +34,6 @@
 	path = vim/bundle/vim-commentary
 	url = git://github.com/tpope/vim-commentary.git
   ignore = dirty
-[submodule "vim/bundle/zencoding-vim"]
-	path = vim/bundle/zencoding-vim
-	url = git://github.com/mattn/zencoding-vim.git
-  ignore = dirty
 [submodule "vim/bundle/vim-liquid"]
 	path = vim/bundle/vim-liquid
 	url = git://github.com/tpope/vim-liquid.git
