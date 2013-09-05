@@ -54,6 +54,10 @@ set number
 nnoremap Y y$
 
 if has("gui_running")
+  " Highlight current line
+  set cursorline
+  " Highlight current column
+  set cursorcolumn
   " Get rid of toolbar in MacVim
   set guioptions=aAce
 end
@@ -85,7 +89,7 @@ set ignorecase
 set smartcase
 
 " Status Line
-set statusline=%F%m%r%h%w\ [TYPE=%Y]\ \ \ \ \ \ \ \ \ \ \ \ [POS=%2l,%2v][%p%%]\ \ \ \ \ \ \ \ \ \ \ \ [LEN=%L]
+set statusline=%F%m%r%h%w\ [TYPE=%Y]\ \ \ \ \ \ \ \ \ \ \ \ [POS=%2l,%2v][%p%%]\ \ \ \ \ \ \ \ \ \ \ \ [LEN=%L]\ \ \ \ \ \ \ \ \ \ \ \ %{fugitive#statusline()}
 set laststatus=2
 
 " No swap files here, no sir
