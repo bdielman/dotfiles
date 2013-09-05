@@ -85,7 +85,7 @@ set ignorecase
 set smartcase
 
 " Status Line
-set statusline=%F%m%r%h%w\ [TYPE=%Y]\ \ \ \ \ \ \ \ \ \ \ \ [POS=%2l,%2v][%p%%]\ \ \ \ \ \ \ \ \ \ \ \ [LEN=%L]\ \ \ \ \ \ \ \ \ \ \ \ %{fugitive#statusline()}
+set statusline=%F%m%r%h%w\ [TYPE=%Y]\ \ \ \ \ \ \ \ \ \ \ \ [POS=%2l,%2v][%p%%]\ \ \ \ \ \ \ \ \ \ \ \ [LEN=%L]
 set laststatus=2
 
 " No swap files here, no sir
