@@ -46,6 +46,9 @@ alias pgstart="pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/serv
 # Stop Postgres
 alias pgstop="pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log stop"
 
+# Bump up open file limit
+alias ulimfix="ulimit -n 1200"
+
 # Functions
 cdvim () {
   (
