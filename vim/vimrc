@@ -108,8 +108,5 @@ let g:fugitive_github_domains = ['https://example.com']
 " Add Handlebars support to Vim Commentary
 autocmd Syntax handlebars set commentstring={{!\ %s\ }}
 
-" Open file in Marked
-nmap <leader>m :! open -a /Applications/Marked.app "%"<CR><CR>
-
 " Allow ctrlp to ignore certain directories
 let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
