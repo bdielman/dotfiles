@@ -109,4 +109,4 @@ let g:fugitive_github_domains = ['https://example.com']
 autocmd Syntax handlebars set commentstring={{!\ %s\ }}
 
 " Allow ctrlp to ignore certain directories
-let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
+let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git\|tmp'
