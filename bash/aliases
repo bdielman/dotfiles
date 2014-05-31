@@ -23,12 +23,9 @@ alias sqlstart="mysql.server start"
 alias sqlstop="mysql.server stop"
 
 # Rails
-alias ss="script/server"
 alias sc="bundle exec rails c"
-alias cons="script/console"
-alias db="script/dbconsole"
-alias spr="script/passenger_restarter"
 alias bails="bundle exec rails s"
+alias be="bundle exec"
 
 # Shortcuts
 alias dt="cd ~/desktop"

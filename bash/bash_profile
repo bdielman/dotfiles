@@ -3,8 +3,5 @@ source ~/.git-completion.sh
 
 #export CC=/usr/local/bin/gcc-4.2
 export CPPFLAGS=-I/opt/X11/include
-#PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 export PATH="/usr/local/share/npm/bin:/usr/local/bin:$PATH"
-[[ -s "$HOME/.profile" ]] && source "$HOME/.profile" # Load the default .profile
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
-export JRUBY_OPTS="-X-C --1.9" # Turning off JIT
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
