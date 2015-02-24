@@ -110,3 +110,6 @@ autocmd Syntax handlebars set commentstring={{!\ %s\ }}
 
 " Allow ctrlp to ignore certain directories
 let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git\|tmp'
+
+" Toggle background color
+nmap <leader>d :let &background = ( &background == "dark"? "light" : "dark" )<CR>
