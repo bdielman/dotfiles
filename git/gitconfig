@@ -2,7 +2,7 @@
   email = bdielman@gmail.com
   name = Brad Dielman
 [alias]
-  st = status -sb
+  st = status
   ci = commit
   br = branch
   co = checkout
