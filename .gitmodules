@@ -46,3 +46,7 @@
 	path = vim/bundle/vim-haml
 	url = git@github.com:tpope/vim-haml.git
   ignore = dirty
+[submodule "vim/bundle/vim-mustache-handlebars"]
+	path = vim/bundle/vim-mustache-handlebars
+	url = git@github.com:mustache/vim-mustache-handlebars.git
+  ignore = dirty
