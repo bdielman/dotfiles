@@ -50,3 +50,7 @@
 	path = vim/bundle/vim-mustache-handlebars
 	url = git@github.com:mustache/vim-mustache-handlebars.git
   ignore = dirty
+[submodule "vim/bundle/vim-jade"]
+	path = vim/bundle/vim-jade
+	url = git@github.com:digitaltoad/vim-jade.git
+  ignore = dirty
