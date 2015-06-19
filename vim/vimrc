@@ -70,7 +70,7 @@ set wildmenu
 set wildmode=list:longest
 
 " Whitespace stuff
-" set wrap
+set nowrap
 set tabstop=2
 set shiftwidth=2
 set expandtab
