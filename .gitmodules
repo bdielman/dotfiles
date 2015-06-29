@@ -54,3 +54,7 @@
 	path = vim/bundle/vim-jade
 	url = git@github.com:digitaltoad/vim-jade.git
   ignore = dirty
+[submodule "vim/bundle/vim-twig"]
+	path = vim/bundle/vim-twig
+	url = git@github.com:evidens/vim-twig.git
+  ignore = dirty
