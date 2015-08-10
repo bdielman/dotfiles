@@ -58,3 +58,7 @@
 	path = vim/bundle/vim-twig
 	url = git@github.com:evidens/vim-twig.git
   ignore = dirty
+[submodule "vim/bundle/vim-jsx"]
+	path = vim/bundle/vim-jsx
+	url = git@github.com:mxw/vim-jsx.git
+  ignore = dirty
