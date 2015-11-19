@@ -8,7 +8,7 @@
   co = checkout
   df = difftool
   mt = mergetool
-  ds = diff --staged
+  ds = diff --stat
   dh = !git diff HEAD HEAD~1
   lg = log -p
   pr = pull --rebase
