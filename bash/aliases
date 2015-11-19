@@ -56,13 +56,3 @@ cdvim () {
 add-host() {
   echo $* | sudo tee -a /etc/hosts
 }
-
-# Install a grunt plugin and save to devDependencies
-function gr() {
-  npm install --save-dev grunt-"$@"
-}
-
-# Install a grunt-contrib plugin and save to devDependencies
-function grc() {
-  npm install --save-dev grunt-contrib-"$@"
-}
