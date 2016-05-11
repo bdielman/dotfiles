@@ -58,3 +58,7 @@
 	path = vim/bundle/vim-jsx
 	url = git@github.com:mxw/vim-jsx.git
   ignore = dirty
+[submodule "vim/bundle/vim-pug"]
+	path = vim/bundle/vim-pug
+	url = git@github.com:digitaltoad/vim-pug.git
+  ignore = dirty
