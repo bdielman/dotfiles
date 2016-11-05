@@ -2,6 +2,6 @@ source ~/.bashrc
 source ~/.git-completion.sh
 
 #export CC=/usr/local/bin/gcc-4.2
-export CPPFLAGS=-I/opt/X11/include
+#export CPPFLAGS=-I/opt/X11/include
 export PATH="/usr/local/share/npm/bin:/usr/local/bin:$PATH"
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
