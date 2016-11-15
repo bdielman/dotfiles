@@ -2,3 +2,4 @@
 html=.html.erb,.html.haml,.haml,.handlebars
 --type-add
 css=.sass,.less,.scss
+--ignore-dir=tmp
