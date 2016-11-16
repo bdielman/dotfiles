@@ -15,9 +15,6 @@ alias catn="cat -n"
 # Copy my public key to my clipboard
 alias pubkey="more ~/.ssh/id_rsa.pub | pbcopy | echo '=> Public key copied to pasteboard.'"
 
-# Flush DNS cache
-alias flushdns="dscacheutil -flushcache"
-
 # MySQL
 alias sqlstart="mysql.server start"
 alias sqlstop="mysql.server stop"
@@ -37,10 +34,8 @@ eval "$(hub alias -s)"
 # Serve static
 alias sstatic="python -m SimpleHTTPServer"
 
-# Start Postgres
+# Postgres
 alias pgstart="pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start"
-
-# Stop Postgres
 alias pgstop="pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log stop"
 
 # Bump up open file limit
