@@ -27,6 +27,7 @@ command! W :w
 command! Q :q
 command! WQ :wq
 command! Wq :wq
+command! Noh :noh
 
 " Shortcuts to make file navigation easier
 cnoremap %% <C-R>=expand('%:h').'/'<cr>
