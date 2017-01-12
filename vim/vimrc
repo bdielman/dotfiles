@@ -108,6 +108,9 @@ let g:fugitive_github_domains = ['https://example.com']
 " Add Handlebars support to Vim Commentary
 autocmd Syntax handlebars set commentstring={{!\ %s\ }}
 
+" Add JSX support for js files
+let g:jsx_ext_required = 0
+
 " Allow ctrlp to ignore certain directories
 let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git\|tmp'
 
