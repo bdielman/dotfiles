@@ -1,4 +1,6 @@
---type-add=html=.html.erb,.html.haml,.haml,.handlebars
---type-add=css=.sass,.less,.scss
+--smart-case
+--type-add=haml=.html.haml,.haml
+--type-add=pug=.pug
+--type-add=markdown=.md,.markdown
 --ignore-dir=tmp
 --ignore-dir=node_modules
