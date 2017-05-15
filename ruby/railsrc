@@ -1,1 +1,1 @@
---skip-test-unit --skip-spring --skip-bundle --database=postgresql --webpack=react --skip-turbolinks --skip-coffee
+--skip-test-unit --skip-spring --database=postgresql --webpack=react --skip-turbolinks --skip-coffee
