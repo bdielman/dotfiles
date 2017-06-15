@@ -11,7 +11,6 @@
   ds = diff --stat
   dh = !git diff HEAD HEAD~1
   lg = log -p
-  pr = pull --rebase
   adda = add -A
   addp = add -p
   amend = commit --amend
