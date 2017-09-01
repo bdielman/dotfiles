@@ -3,6 +3,7 @@ source ~/.git-completion.sh
 
 export PATH="/usr/local/share/npm/bin:/usr/local/bin:/usr/local/sbin:$PATH"
 export PATH="$PATH:`yarn global bin`"
+export GPG_TTY=$(tty)
 
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
