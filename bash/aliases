@@ -42,7 +42,7 @@ alias pgstop="pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/serve
 alias apachestart="sudo apachectl start"
 alias apachestop="sudo apachectl stop"
 alias apacherestart="sudo apachectl -k restart"
-alias apachelog="tail -f /usr/local/var/log/apache2/error_log"
+alias apachelog="tail -f /usr/local/var/log/httpd/error_log"
 
 # Bump up open file limit
 alias ulimfix="ulimit -n 1200"
