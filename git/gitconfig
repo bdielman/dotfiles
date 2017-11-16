@@ -45,5 +45,3 @@
   tool = Kaleidoscope
 [include]
   path = ~/.git_secrets/secrets
-[commit]
-  gpgsign = true
