@@ -5,6 +5,9 @@ export PATH="/usr/local/share/npm/bin:/usr/local/bin:/usr/local/sbin:$PATH"
 export PATH="$PATH:`yarn global bin`"
 export GPG_TTY=$(tty)
 
+# Add Visual Studio Code (code)
+export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
+
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
 # https://openradar.appspot.com/27348363
