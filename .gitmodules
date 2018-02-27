@@ -64,3 +64,6 @@
 [submodule "vim/bundle/vim-rhubarb"]
 	path = vim/bundle/vim-rhubarb
 	url = git@github.com:tpope/vim-rhubarb.git
+[submodule "vim/bundle/vim-gruvbox"]
+	path = vim/bundle/vim-gruvbox
+	url = git@github.com:morhetz/gruvbox.git

@@ -14,9 +14,10 @@ filetype indent on
 syntax on
 
 " Colorscheme
-let g:solarized_termcolors=256
-let g:solarized_termtrans=1
-colorscheme solarized
+" let g:solarized_termcolors=256
+" let g:solarized_termtrans=1
+colorscheme gruvbox
+let g:gruvbox_contrast_dark='hard'
 set background=dark
 
 " Remap leader
@@ -61,6 +62,8 @@ if has("gui_running")
   set cursorcolumn
   " Get rid of toolbar in MacVim
   set guioptions=aAce
+  " Set font
+  set guifont=Menlo:h14
 end
 
 " Set commandbar height
