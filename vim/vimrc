@@ -119,4 +119,4 @@ let g:jsx_ext_required = 0
 let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git\|tmp'
 
 " Toggle background color
-nmap <leader>d :let &background = ( &background == "dark"? "light" : "dark" )<CR>
+" nmap <leader>d :let &background = ( &background == 'dark'? 'light' : 'dark' )<CR>
