@@ -17,7 +17,7 @@ syntax on
 " let g:solarized_termcolors=256
 " let g:solarized_termtrans=1
 colorscheme gruvbox
-let g:gruvbox_contrast_dark='hard'
+" let g:gruvbox_contrast_dark='hard'
 set background=dark
 
 " Remap leader
