@@ -89,15 +89,16 @@ set_prompts() {
 
         # Solarized colors
         # (https://github.com/altercation/solarized/tree/master/iterm2-colors-solarized#the-values)
-        black=$(tput setaf 0)
-        blue=$(tput setaf 33)
-        cyan=$(tput setaf 37)
-        green=$(tput setaf 64)
-        orange=$(tput setaf 166)
-        purple=$(tput setaf 125)
-        red=$(tput setaf 124)
+        # NOTE: Updated to reflect Gruvbox colors - 3/13/2018
+        black=$(tput setaf 235)
+        blue=$(tput setaf 109)
+        cyan=$(tput setaf 108)
+        green=$(tput setaf 142)
+        orange=$(tput setaf 208)
+        purple=$(tput setaf 175)
+        red=$(tput setaf 167)
         white=$(tput setaf 15)
-        yellow=$(tput setaf 136)
+        yellow=$(tput setaf 214)
     else
         bold=""
         reset="\e[0m"
