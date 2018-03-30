@@ -14,11 +14,22 @@ filetype indent on
 syntax on
 
 " Colorscheme
+" ---------------
+
+" Solarized Settings
 " let g:solarized_termcolors=256
 " let g:solarized_termtrans=1
-colorscheme gruvbox
-" let g:gruvbox_contrast_dark='hard'
-set background=dark
+" colorscheme solarized
+" set background=dark
+
+" Gruvbox Settings
+" colorscheme gruvbox
+" set background=dark
+"
+" Dracula Settings
+let g:dracula_italic = 0
+colorscheme dracula
+highlight Normal ctermbg=None
 
 " Remap leader
 let mapleader = ","
