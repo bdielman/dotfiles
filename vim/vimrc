@@ -23,13 +23,13 @@ syntax on
 " set background=dark
 
 " Gruvbox Settings
-colorscheme gruvbox
-set background=dark
+" colorscheme gruvbox
+" set background=dark
 
 " Dracula Settings
-" let g:dracula_italic = 0
-" colorscheme dracula
-" highlight Normal ctermbg=None
+let g:dracula_italic = 0
+colorscheme dracula
+highlight Normal ctermbg=None
 
 " Remap leader
 let mapleader = ","
