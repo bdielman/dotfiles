@@ -74,7 +74,9 @@ if has("gui_running")
   " Get rid of toolbar in MacVim
   set guioptions=aAce
   " Set font
-  set guifont=Menlo:h13
+  " set guifont=Menlo:h13
+  set macligatures
+  set guifont=Fira\ Code:h14
 end
 
 " Set commandbar height
