@@ -2,7 +2,7 @@ source ~/.bashrc
 source ~/.git-completion.sh
 
 export PATH="/usr/local/share/npm/bin:/usr/local/bin:/usr/local/sbin:$PATH"
-export PATH="$PATH:`yarn global bin`"
+# export PATH="$PATH:`yarn global bin`"
 export GPG_TTY=$(tty)
 
 # Add Visual Studio Code (code)
