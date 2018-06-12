@@ -57,3 +57,13 @@ cdvim () {
 add-host() {
   echo $* | sudo tee -a /etc/hosts
 }
+
+# Show last comit in directory
+# https://stackoverflow.com/a/17361406/456337
+gw() {
+  for f in $(git ls-tree --name-only HEAD .); do
+    format="%C(green)%cr%C(reset)}%C(cyan)%h%C(reset)}%s}%C(yellow)%cn%C(reset)}"
+    str="$(git log --color -1 --pretty=format:"$format" -- "$f")"
+    printf "$f}$str\n"
+  done | column -s '}' -t
+}
