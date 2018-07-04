@@ -1,11 +1,10 @@
 source ~/.bashrc
 
 # Bash completion scripts
-source ~/.git-completion.sh
+# source ~/.git-completion.sh
 source /usr/local/etc/bash_completion.d/brew
 source /usr/local/etc/bash_completion.d/hub.bash_completion.sh
-# The new git completion broke with git version 2.17.1
-# source /usr/local/etc/bash_completion.d/git-completion.bash
+source /usr/local/etc/bash_completion.d/git-completion.bash
 source /usr/local/etc/bash_completion.d/npm
 
 export PATH="/usr/local/share/npm/bin:/usr/local/bin:/usr/local/sbin:$PATH"
