@@ -73,3 +73,6 @@
 [submodule "vim/bundle/vim-dracula"]
 	path = vim/bundle/vim-dracula
 	url = git@github.com:dracula/vim.git
+[submodule "vim/bundle/vim-ale"]
+	path = vim/bundle/vim-ale
+	url = git@github.com:w0rp/ale.git

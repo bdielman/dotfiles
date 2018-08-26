@@ -90,6 +90,7 @@ set nowrap
 set tabstop=2
 set shiftwidth=2
 set expandtab
+set colorcolumn=80
 
 " Show invisible characters
 " set lcs=tab:▸\ ,trail:·,eol:¬,nbsp:_
@@ -132,3 +133,13 @@ let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git\|tmp'
 
 " Toggle background color
 " nmap <leader>d :let &background = ( &background == 'dark'? 'light' : 'dark' )<CR>
+
+" Setup Prettier with Ale
+let g:ale_fixers={
+	\'css': ['prettier'],
+	\'scss': ['prettier'],
+	\'javascript': ['prettier'],
+	\'json': ['prettier']
+\}
+let g:ale_javascript_prettier_use_local_config = 1
+let g:ale_fix_on_save = 1
