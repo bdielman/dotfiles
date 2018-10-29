@@ -5,10 +5,15 @@ source ~/.bashrc
 source /usr/local/etc/bash_completion.d/brew
 source /usr/local/etc/bash_completion.d/hub.bash_completion.sh
 source /usr/local/etc/bash_completion.d/git-completion.bash
-source /usr/local/etc/bash_completion.d/npm
+# source /usr/local/etc/bash_completion.d/npm
 
-export PATH="/usr/local/share/npm/bin:/usr/local/bin:/usr/local/sbin:$PATH"
-# export PATH="$PATH:`yarn global bin`"
+# export PATH="/usr/local/share/npm/bin:/usr/local/bin:/usr/local/sbin:$PATH"
+
+# Older version of Elasticsearch and Node
+export PATH="/usr/local/opt/elasticsearch@5.6/bin:$PATH"
+export PATH="/usr/local/opt/node@8/bin:$PATH"
+
+export PATH="$PATH:`yarn global bin`"
 export GPG_TTY=$(tty)
 
 # Add Visual Studio Code (code)
