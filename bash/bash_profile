@@ -1,7 +1,6 @@
 source ~/.bashrc
 
 # Bash completion scripts
-# source ~/.git-completion.sh
 source /usr/local/etc/bash_completion.d/brew
 source /usr/local/etc/bash_completion.d/hub.bash_completion.sh
 source /usr/local/etc/bash_completion.d/git-completion.bash

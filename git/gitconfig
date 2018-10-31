@@ -17,7 +17,6 @@
   dump = cat-file -p
   trim = !git remote prune origin && git gc
   who = shortlog -sn --
-  put = push origin HEAD
   undo = reset --soft HEAD^
 [core]
   excludesfile = /Users/braddielman/.gitignore_global
