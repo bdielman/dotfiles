@@ -128,8 +128,9 @@ autocmd Syntax handlebars set commentstring={{!\ %s\ }}
 " Add JSX support for js files
 let g:jsx_ext_required = 0
 
-" Allow ctrlp to ignore certain directories
+" Allow ctrlp to ignore certain directories and include dotfiles
 let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git\|tmp'
+let g:ctrlp_show_hidden = 1
 
 " Toggle background color
 " nmap <leader>d :let &background = ( &background == 'dark'? 'light' : 'dark' )<CR>
