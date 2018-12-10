@@ -27,3 +27,4 @@ call minpac#add('morhetz/gruvbox')
 " Minpac commands
 command! PackUpdate call minpac#update()
 command! PackClean call minpac#clean()
+command! PackStatus call minpac#status()
