@@ -31,7 +31,7 @@ $ git clone https://github.com/k-takata/minpac.git vim/pack/minpac/opt/minpac
 
 #### Add new plugins
 
-```
+```bash
 # Add the plugin to packages.vim file
 call minpac#add('[github_user_name]/[github_repo_name]')
 
@@ -41,7 +41,7 @@ call minpac#add('[github_user_name]/[github_repo_name]')
 
 #### Remove plugins
 
-```
+```bash
 # Delete the line for the plugin from packages.vim file
 # Run minpac clean (while in Vim)
 :PackClean
