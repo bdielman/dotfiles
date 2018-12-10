@@ -1,9 +1,8 @@
 " Forget being compatible with good ol' vi
 set nocompatible
 
-" Add Pathogen
-call pathogen#infect()
-call pathogen#helptags()
+" Add minpac and vim packages
+source ~/.dotfiles/vim/packages.vim
 
 " Get that filetype stuff happening
 filetype on

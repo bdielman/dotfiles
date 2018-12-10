@@ -4,9 +4,9 @@
 
 ### Prerequisites
 
-* Git (1.7+)
-* Vim (7.3+) - MacVim installed via [Homebrew](http://mxcl.github.com/homebrew/)
-* [Kaleidoscope](http://www.kaleidoscopeapp.com/) - Gitconfig points to this app for diffs
+* Git (2.0+)
+* Vim (8.0+) - MacVim installed via [Homebrew](https://brew.sh)
+* [Kaleidoscope](https://www.kaleidoscopeapp.com) - Gitconfig points to this app for diffs
 
 ### The Setup
 
@@ -18,24 +18,33 @@ $ git clone git@github.com:bdielman/dotfiles.git ~/.dotfiles
 $ cd ~/.dotfiles
 ```
 
-#### Register and clone the Vim bundles
+#### Install minpac and setup vim plugins
 
 ```bash
-# Register the submodules
-$ git submodule init
-# Clone the submodules
-$ git submodule update
+# Create directory and install minpac
+$ mkdir -p vim/pack/minpac/opt/
+$ git clone https://github.com/k-takata/minpac.git vim/pack/minpac/opt/minpac
+
+# Install/update plugins (while in Vim)
+:PackUpdate
 ```
 
-#### Add new submodules
+#### Add new plugins
 
-```bash
-# Add the submodule
-$ git submodule add git://example.com/remote/path/to/repo.git vim/bundle/one-submodule
-# Stage the changes
-$ git add vim/bundle/one-submodule
-# Commit the changes
-$ git commit -m "Add a new submodule: one-submodule"
+```
+# Add the plugin to packages.vim file
+call minpac#add('[github_user_name]/[github_repo_name]')
+
+# Intall/update plugins (while in Vim)
+:PackUpdate
+```
+
+#### Remove plugins
+
+```
+# Delete the line for the plugin from packages.vim file
+# Run minpac clean (while in Vim)
+:PackClean
 ```
 
 #### Symlink the new files to HOME
@@ -45,15 +54,6 @@ $ bash symlinkit.sh
 ```
 
 Running the symlinkit script will delete (if they already exist) and recreate the symlinks in HOME.
-
-#### Update all submodules at once
-
-```bash
-# Navigate to your dotfiles directory
-$ cd ~/.dotfiles
-# Run this one line in bash
-$ git submodule foreach git pull origin master
-```
 
 ## Acknowledgements
 
