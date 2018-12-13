@@ -29,18 +29,17 @@
   nice = "%C(yellow)%h%C(reset) %C(white)%s%C(cyan)%d%C(reset) -- %an; %ar"
 [web]
   browser = open
-[difftool "Kaleidoscope"]
-  cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
+[diff]
+  tool = mvimdiff
 [difftool]
   prompt = false
-[diff]
-  tool = Kaleidoscope
-[mergetool "Kaleidoscope"]
-  cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
-  trustExitCode = true
+[difftool "mvimdiff"]
+  cmd = mvim -f -d \"$LOCAL\" \"$REMOTE\"
+[merge]
+  tool = mvimdiff
 [mergetool]
   prompt = false
-[merge]
-  tool = Kaleidoscope
+[mergetool "mvimdiff"]
+  cmd = mvim -f -c \"Gdiff\" \"$MERGED\"
 [include]
   path = ~/.git_secrets/secrets
