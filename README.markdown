@@ -6,7 +6,6 @@
 
 * Git (2.0+)
 * Vim (8.0+) - MacVim installed via [Homebrew](https://brew.sh)
-* [Kaleidoscope](https://www.kaleidoscopeapp.com) - Gitconfig points to this app for diffs
 
 ### The Setup
 
