@@ -20,7 +20,7 @@ call minpac#add('tpope/vim-haml')
 call minpac#add('tpope/vim-markdown')
 
 " Colorschemes
-call minpac#add('altercation/solarized')
+call minpac#add('altercation/vim-colors-solarized')
 call minpac#add('dracula/vim')
 call minpac#add('morhetz/gruvbox')
 
