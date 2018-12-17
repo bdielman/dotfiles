@@ -16,6 +16,7 @@ syntax on
 " ---------------
 
 " Solarized Settings
+" let g:solarized_diffmode="high"
 " colorscheme solarized
 " set background=dark
 
