@@ -16,13 +16,13 @@ syntax on
 " ---------------
 
 " Solarized Settings
-" let g:solarized_diffmode="high"
-" colorscheme solarized
-" set background=dark
+let g:solarized_diffmode="high"
+colorscheme solarized
+set background=dark
 
 " Gruvbox Settings
-colorscheme gruvbox
-set background=dark
+" colorscheme gruvbox
+" set background=dark
 
 " Dracula Settings
 " let g:dracula_italic = 0
