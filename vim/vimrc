@@ -131,7 +131,7 @@ let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git\|tmp'
 let g:ctrlp_show_hidden = 1
 
 " Toggle background color
-" nmap <leader>d :let &background = ( &background == 'dark'? 'light' : 'dark' )<CR>
+nmap <leader>d :let &background = ( &background == 'dark'? 'light' : 'dark' )<CR>
 
 " Setup Prettier with Ale
 let g:ale_fixers={
