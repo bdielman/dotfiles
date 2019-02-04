@@ -4,3 +4,4 @@
 --type-add=markdown=.md,.markdown
 --ignore-dir=tmp
 --ignore-dir=node_modules
+--ignore-dir=packs-test
