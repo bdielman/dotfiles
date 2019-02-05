@@ -40,6 +40,6 @@
 [mergetool]
   prompt = false
 [mergetool "mvimdiff"]
-  cmd = mvim -f -c \"Gdiff\" \"$MERGED\"
+  cmd = mvim -f -c \"Gvdiff\" \"$MERGED\"
 [include]
   path = ~/.git_secrets/secrets
