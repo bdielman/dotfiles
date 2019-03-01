@@ -104,7 +104,19 @@ set ignorecase
 set smartcase
 
 " Status Line
-set statusline=%F%m%r%h%w\ [TYPE=%Y]\ \ \ \ \ \ \ \ \ \ \ \ [POS=%2l,%2v][%p%%]\ \ \ \ \ \ \ \ \ \ \ \ [LEN=%L]\ \ \ \ \ \ \ \ \ \ \ \ %{fugitive#statusline()}
+function! GetGitBranchName()
+
+    let branchName = ""
+
+    if exists("g:loaded_fugitive")
+        let branchName = "[" . fugitive#head() . "]"
+    endif
+
+    return branchName
+
+endfunction
+
+set statusline=%f%m%r%h%w\ %y\ %{GetGitBranchName()}\ %=[%c,%l/%L]\ [%p%%]
 set laststatus=2
 
 " No swap files here, no sir
