@@ -8,6 +8,7 @@ call minpac#add('tpope/vim-fugitive')
 call minpac#add('tpope/vim-rhubarb')
 call minpac#add('tpope/vim-surround')
 call minpac#add('w0rp/ale')
+call minpac#add('vim-airline/vim-airline')
 
 " Syntax highlighting
 call minpac#add('lumiliet/vim-twig')

@@ -16,13 +16,13 @@ syntax on
 " ---------------
 
 " Solarized Settings
-let g:solarized_diffmode="high"
-colorscheme solarized
-set background=dark
+" let g:solarized_diffmode="high"
+" colorscheme solarized
+" set background=dark
 
 " Gruvbox Settings
-" colorscheme gruvbox
-" set background=dark
+colorscheme gruvbox
+set background=dark
 
 " Dracula Settings
 " let g:dracula_italic = 0
@@ -165,3 +165,7 @@ let g:user_emmet_settings = {
     \'extends' : 'jsx',
   \},
 \}
+
+" Airline settings
+let g:airline_powerline_fonts = 1
+let g:airline#extensions#ale#enabled = 1
