@@ -1,6 +1,7 @@
 packadd minpac
 call minpac#init()
 
+" Utilities
 call minpac#add('kien/ctrlp.vim')
 call minpac#add('mattn/emmet-vim')
 call minpac#add('tpope/vim-commentary')
