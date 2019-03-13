@@ -1,5 +1,7 @@
+" minpac stuff
 packadd minpac
 call minpac#init()
+call minpac#add('k-takata/minpac', {'type': 'opt'})
 
 " Utilities
 call minpac#add('kien/ctrlp.vim')
