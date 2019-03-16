@@ -107,15 +107,13 @@ set smartcase
 
 " Status Line
 function! GetGitBranchName()
+  let branchName = ""
 
-    let branchName = ""
+  if exists("g:loaded_fugitive")
+    let branchName = "[" . fugitive#head() . "]"
+  endif
 
-    if exists("g:loaded_fugitive")
-        let branchName = "[" . fugitive#head() . "]"
-    endif
-
-    return branchName
-
+  return branchName
 endfunction
 
 set statusline=%f%m%r%h%w\ %y\ %{GetGitBranchName()}\ %=[%c,%l/%L]\ [%p%%]
@@ -149,10 +147,10 @@ nmap <leader>d :let &background = ( &background == 'dark'? 'light' : 'dark' )<CR
 
 " Setup Prettier with Ale
 let g:ale_fixers={
-	\'css': ['prettier'],
-	\'scss': ['prettier'],
-	\'javascript': ['prettier'],
-	\'json': ['prettier']
+  \'css': ['prettier'],
+  \'scss': ['prettier'],
+  \'javascript': ['prettier'],
+  \'json': ['prettier']
 \}
 let g:ale_javascript_prettier_use_local_config = 1
 let g:ale_fix_on_save = 1
