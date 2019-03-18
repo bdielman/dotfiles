@@ -168,3 +168,6 @@ let g:user_emmet_settings = {
 
 " Airline settings
 let g:airline_powerline_fonts = 1
+
+" Hide duplicate mode information
+set noshowmode
