@@ -161,13 +161,19 @@ nmap <silent> <C-j> <Plug>(ale_next_wrap)
 
 " Allow Emmet to recognize JSX
 let g:user_emmet_settings = {
-  \'javascript.jsx' : {
-    \'extends' : 'jsx',
+  \'javascript.jsx': {
+    \'extends': 'jsx',
   \},
 \}
+
+" Hide duplicate mode information when using Airline or Lightline
+set noshowmode
 
 " Airline settings
 let g:airline_powerline_fonts = 1
 
-" Hide duplicate mode information
-set noshowmode
+function! AirlineInit()
+  let g:airline_section_c = '%t'
+endfunction
+
+autocmd User AirlineAfterInit call AirlineInit()
