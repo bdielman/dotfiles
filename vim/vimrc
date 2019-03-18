@@ -146,12 +146,12 @@ let g:ctrlp_show_hidden = 1
 nmap <leader>d :let &background = ( &background == 'dark'? 'light' : 'dark' )<CR>
 
 " Setup Prettier with Ale
-let g:ale_fixers={
-  \'css': ['prettier'],
-  \'scss': ['prettier'],
-  \'javascript': ['prettier'],
-  \'json': ['prettier']
-\}
+let g:ale_fixers = {
+      \ 'css': ['prettier'],
+      \ 'scss': ['prettier'],
+      \ 'javascript': ['prettier'],
+      \ 'json': ['prettier']
+      \ }
 let g:ale_javascript_prettier_use_local_config = 1
 let g:ale_fix_on_save = 1
 
@@ -161,10 +161,11 @@ nmap <silent> <C-j> <Plug>(ale_next_wrap)
 
 " Allow Emmet to recognize JSX
 let g:user_emmet_settings = {
-  \'javascript.jsx': {
-    \'extends': 'jsx',
-  \},
-\}
+      \
+      \ 'javascript.jsx': {
+      \   'extends': 'jsx',
+      \ },
+      \ }
 
 " Hide duplicate mode information when using Airline or Lightline
 set noshowmode
