@@ -54,9 +54,6 @@ set hidden
 " Don't update the display while executing macros
 set lazyredraw
 
-" At least let yourself know what mode you're in
-set showmode
-
 " Show incomplete cmds down the bottom
 set showcmd
 
@@ -161,7 +158,6 @@ nmap <silent> <C-j> <Plug>(ale_next_wrap)
 
 " Allow Emmet to recognize JSX
 let g:user_emmet_settings = {
-      \
       \ 'javascript.jsx': {
       \   'extends': 'jsx',
       \ },
