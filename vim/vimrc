@@ -1,15 +1,15 @@
-" Forget being compatible with good ol' vi
+" Remove compatibility with vi
 set nocompatible
 
 " Add minpac and vim packages
 source ~/.dotfiles/vim/packages.vim
 
-" Get that filetype stuff happening
+" Filetype settings
 filetype on
 filetype plugin on
 filetype indent on
 
-" Turn on that syntax highlighting and set background color
+" Turn on syntax highlighting and set background color
 syntax on
 
 " Colorscheme
@@ -31,14 +31,19 @@ if !has("gui_running")
 end
 colorscheme dracula
 
+" Toggle background color
+nmap <leader>d :let &background = ( &background == 'dark'? 'light' : 'dark' )<CR>
+
 " Remap leader
 let mapleader = ","
 
-" Seriously, guys. It's not like :W is bound to anything anyway.
+" Fix issues mistyping :w and :q
 command! W :w
 command! Q :q
 command! WQ :wq
 command! Wq :wq
+
+" For mistyping noh constantly
 command! Noh :noh
 
 " Shortcuts to make file navigation easier
@@ -48,7 +53,7 @@ map <leader>es :sp %%
 map <leader>ev :vsp %%
 map <leader>et :tabe %%
 
-" Why is this not a default
+" Keep buffers around after closing
 set hidden
 
 " Don't update the display while executing macros
@@ -63,6 +68,7 @@ set number
 " Yank from the cursor to the end of the line, to be consistent with C and D.
 nnoremap Y y$
 
+" Set cursorline/cursorcolumn and other GUI settings
 if has("gui_running")
   " Highlight current line
   set cursorline
@@ -89,10 +95,6 @@ set shiftwidth=2
 set expandtab
 set colorcolumn=80
 
-" Show invisible characters
-" set lcs=tab:▸\ ,trail:·,eol:¬,nbsp:_
-" set list
-
 " Make omnicomplete a bit easier
 imap <Leader>o <C-x><C-o>
 
@@ -116,7 +118,7 @@ endfunction
 set statusline=%f%m%r%h%w\ %y\ %{GetGitBranchName()}\ %=[%c,%l/%L]\ [%p%%]
 set laststatus=2
 
-" No swap files here, no sir
+" No swap files
 set nobackup
 set nowritebackup
 set noswapfile
@@ -135,14 +137,11 @@ autocmd Syntax handlebars set commentstring={{!\ %s\ }}
 " Add JSX support for js files
 let g:jsx_ext_required = 0
 
-" Allow ctrlp to ignore certain directories and include dotfiles
+" Allow CtrlP to ignore certain directories and include dotfiles
 let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git\|tmp'
 let g:ctrlp_show_hidden = 1
 
-" Toggle background color
-nmap <leader>d :let &background = ( &background == 'dark'? 'light' : 'dark' )<CR>
-
-" Setup Prettier with Ale
+" Setup Prettier with ALE
 let g:ale_fixers = {
       \ 'css': ['prettier'],
       \ 'scss': ['prettier'],
@@ -152,7 +151,7 @@ let g:ale_fixers = {
 let g:ale_javascript_prettier_use_local_config = 1
 let g:ale_fix_on_save = 1
 
-" Jump between errors with Ale
+" Jump between errors with ALE
 nmap <silent> <C-k> <Plug>(ale_previous_wrap)
 nmap <silent> <C-j> <Plug>(ale_next_wrap)
 
