@@ -166,8 +166,6 @@ let g:user_emmet_settings = {
 set noshowmode
 
 " Airline settings
-let g:airline_powerline_fonts = 1
-
 function! AirlineInit()
   let g:airline_section_c = '%t'
 endfunction
