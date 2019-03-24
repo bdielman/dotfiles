@@ -14,16 +14,6 @@ syntax on
 
 " Colorscheme
 " ---------------
-
-" Solarized Settings
-" let g:solarized_diffmode="high"
-" colorscheme solarized
-" set background=dark
-
-" Gruvbox Settings
-" colorscheme gruvbox
-" set background=dark
-
 " Dracula Settings
 if !has("gui_running")
   let g:dracula_italic = 0
