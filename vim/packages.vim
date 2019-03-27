@@ -4,7 +4,7 @@ call minpac#init()
 call minpac#add('k-takata/minpac', {'type': 'opt'})
 
 " Utilities
-call minpac#add('kien/ctrlp.vim')
+call minpac#add('ctrlpvim/ctrlp.vim')
 call minpac#add('mattn/emmet-vim')
 call minpac#add('tpope/vim-commentary')
 call minpac#add('tpope/vim-fugitive')
