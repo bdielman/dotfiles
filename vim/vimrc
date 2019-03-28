@@ -154,10 +154,3 @@ let g:user_emmet_settings = {
 
 " Hide duplicate mode information when using Airline or Lightline
 set noshowmode
-
-" Airline settings
-function! AirlineInit()
-  let g:airline_section_c = '%t'
-endfunction
-
-autocmd User AirlineAfterInit call AirlineInit()
