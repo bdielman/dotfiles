@@ -14,7 +14,6 @@ call minpac#add('w0rp/ale')
 call minpac#add('vim-airline/vim-airline')
 
 " Syntax highlighting
-call minpac#add('lumiliet/vim-twig')
 call minpac#add('mxw/vim-jsx')
 call minpac#add('othree/html5.vim')
 call minpac#add('pangloss/vim-javascript')
