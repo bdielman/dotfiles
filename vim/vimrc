@@ -13,16 +13,14 @@ filetype indent on
 syntax on
 
 " Colorscheme
-" ---------------
-" Dracula Settings
 if !has("gui_running")
   let g:dracula_italic = 0
   let g:dracula_colorterm = 0
 end
 colorscheme dracula
 
-" Toggle background color
-nmap <leader>d :let &background = ( &background == 'dark'? 'light' : 'dark' )<CR>
+" Toggle background color (only for certain colorschemes)
+" nmap <leader>d :let &background = ( &background == 'dark'? 'light' : 'dark' )<CR>
 
 " Remap leader
 let mapleader = ","
@@ -51,6 +49,9 @@ set lazyredraw
 
 " Show incomplete cmds down the bottom
 set showcmd
+
+" Prevent mode from displaying
+set noshowmode
 
 " Add line numbers
 set number
@@ -151,6 +152,3 @@ let g:user_emmet_settings = {
       \   'extends': 'jsx',
       \ },
       \ }
-
-" Hide duplicate mode information when using Airline or Lightline
-set noshowmode
