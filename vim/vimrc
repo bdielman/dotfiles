@@ -68,7 +68,6 @@ if has("gui_running")
   " Get rid of toolbar in MacVim
   set guioptions=aAce
   " Set font
-  " set guifont=Menlo:h14
   set guifont=Source\ Code\ Pro:h14
 end
 
