@@ -64,7 +64,7 @@ if has("gui_running")
   " Highlight current line
   set cursorline
   " Highlight current column
-  set cursorcolumn
+  " set cursorcolumn
   " Get rid of toolbar in MacVim
   set guioptions=aAce
   " Set font
