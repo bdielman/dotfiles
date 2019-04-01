@@ -1,3 +1,6 @@
+" BASIC SETTINGS
+" ------------------------
+
 " Remove compatibility with vi
 set nocompatible
 
@@ -11,16 +14,6 @@ filetype indent on
 
 " Turn on syntax highlighting and set background color
 syntax on
-
-" Colorscheme
-if !has("gui_running")
-  let g:dracula_italic = 0
-  let g:dracula_colorterm = 0
-end
-colorscheme dracula
-
-" Toggle background color (only for certain colorschemes)
-" nmap <leader>d :let &background = ( &background == 'dark'? 'light' : 'dark' )<CR>
 
 " Remap leader
 let mapleader = ","
@@ -117,6 +110,28 @@ set noswapfile
 set noerrorbells
 set visualbell
 set t_vb=
+
+
+" COLORSCHEMES
+" ------------------------
+
+" Dracula settings
+if !has("gui_running")
+  let g:dracula_italic = 0
+  let g:dracula_colorterm = 0
+end
+colorscheme dracula
+
+" Gruvbox settings
+" set background=dark
+" colorscheme gruvbox
+
+" Toggle background color (only for certain colorschemes)
+nmap <leader>d :let &background = ( &background == 'dark'? 'light' : 'dark' )<CR>
+
+
+" PLUGINS
+" ------------------------
 
 " Set Github Domains
 let g:fugitive_github_domains = ['https://example.com']
