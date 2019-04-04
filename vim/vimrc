@@ -52,14 +52,14 @@ set number
 " Yank from the cursor to the end of the line, to be consistent with C and D.
 nnoremap Y y$
 
-" Set cursorline/cursorcolumn and other GUI settings
+" Set GUI options and add cursorline for MacVim
 if has("gui_running")
   " Highlight current line
   set cursorline
-  " Highlight current column
-  " set cursorcolumn
+
   " Get rid of toolbar in MacVim
-  set guioptions=aAce
+  set guioptions-=T guioptions-=e guioptions-=L guioptions-=r
+
   " Set font
   set guifont=Source\ Code\ Pro:h14
 end
@@ -120,6 +120,7 @@ if !has("gui_running")
   let g:dracula_italic = 0
   let g:dracula_colorterm = 0
 end
+
 colorscheme dracula
 
 " Gruvbox settings
@@ -166,3 +167,7 @@ let g:user_emmet_settings = {
       \   'extends': 'jsx',
       \ },
       \ }
+
+" Airline settings
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#fnamemod = ':t'
