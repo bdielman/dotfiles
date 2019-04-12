@@ -128,7 +128,7 @@ colorscheme dracula
 " colorscheme gruvbox
 
 " Toggle background color (only for certain colorschemes)
-nmap <leader>d :let &background = ( &background == 'dark'? 'light' : 'dark' )<CR>
+" nmap <leader>d :let &background = ( &background == 'dark'? 'light' : 'dark' )<CR>
 
 
 " PLUGINS
