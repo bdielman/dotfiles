@@ -137,9 +137,6 @@ colorscheme dracula
 " Set Github Domains
 let g:fugitive_github_domains = ['https://example.com']
 
-" Add Handlebars support to Vim Commentary
-autocmd Syntax handlebars set commentstring={{!\ %s\ }}
-
 " Add JSX support for js files
 let g:jsx_ext_required = 0
 
