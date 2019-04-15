@@ -167,4 +167,4 @@ let g:user_emmet_settings = {
 
 " Airline settings
 let g:airline#extensions#tabline#enabled = 1
-let g:airline#extensions#tabline#fnamemod = ':t'
+let g:airline#extensions#tabline#formatter = 'short_path'
