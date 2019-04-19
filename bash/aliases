@@ -27,6 +27,7 @@ alias be="bundle exec"
 # Shortcuts
 alias dt="cd ~/Desktop"
 alias www="cd ~/Sites"
+alias dot="cd ~/.dotfiles"
 
 # Hub
 eval "$(hub alias -s)"
