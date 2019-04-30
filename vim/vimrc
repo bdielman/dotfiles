@@ -52,8 +52,11 @@ set number
 " Yank from the cursor to the end of the line, to be consistent with C and D.
 nnoremap Y y$
 
-" Set GUI options and add cursorline for MacVim
+" Set GUI options
 if has("gui_running")
+  " Highlight current column
+  set cursorcolumn
+
   " Highlight current line
   set cursorline
 
@@ -116,16 +119,19 @@ set t_vb=
 " ------------------------
 
 " Dracula settings
-if !has("gui_running")
-  let g:dracula_italic = 0
-  let g:dracula_colorterm = 0
-end
+" if !has("gui_running")
+"   let g:dracula_italic = 0
+"   let g:dracula_colorterm = 0
+" end
 
-colorscheme dracula
+" colorscheme dracula
 
 " Gruvbox settings
 " set background=dark
 " colorscheme gruvbox
+
+" Nord settings
+colorscheme nord
 
 " Toggle background color (only for certain colorschemes)
 " nmap <leader>d :let &background = ( &background == 'dark'? 'light' : 'dark' )<CR>

@@ -25,6 +25,7 @@ call minpac#add('tpope/vim-markdown')
 " Colorschemes
 call minpac#add('dracula/vim')
 call minpac#add('morhetz/gruvbox')
+call minpac#add('arcticicestudio/nord-vim')
 
 " Minpac commands
 command! PackUpdate call minpac#update()
