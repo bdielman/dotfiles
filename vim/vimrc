@@ -172,5 +172,6 @@ let g:user_emmet_settings = {
       \ }
 
 " Airline settings
+let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#formatter = 'short_path'
