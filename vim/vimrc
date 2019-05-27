@@ -118,15 +118,7 @@ set t_vb=
 " COLORSCHEMES
 " ------------------------
 
-" Gruvbox settings
-" set background=dark
-" colorscheme gruvbox
-
-" Nord settings
 colorscheme nord
-
-" Toggle background color (only for certain colorschemes)
-" nmap <leader>d :let &background = ( &background == 'dark'? 'light' : 'dark' )<CR>
 
 
 " PLUGINS

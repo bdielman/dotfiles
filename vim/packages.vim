@@ -23,7 +23,6 @@ call minpac#add('tpope/vim-haml')
 call minpac#add('tpope/vim-markdown')
 
 " Colorschemes
-call minpac#add('morhetz/gruvbox')
 call minpac#add('arcticicestudio/nord-vim')
 
 " Minpac commands
