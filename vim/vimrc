@@ -73,6 +73,10 @@ set cmdheight=2
 " Make tab completion act more like bash
 set wildmenu
 set wildmode=list:longest
+set wildignore+=*.a,*.o
+set wildignore+=*.bmp,*.gif,*.ico,*.jpg,*.png
+set wildignore+=.DS_Store,.git,.hg,.svn
+set wildignore+=*~,*.swp,*.tmp
 
 " Whitespace stuff
 set nowrap
@@ -131,7 +135,7 @@ let g:fugitive_github_domains = ['https://example.com']
 let g:jsx_ext_required = 0
 
 " Allow CtrlP to ignore certain directories and include dotfiles
-let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git\|tmp\|sass-cache'
+let g:ctrlp_custom_ignore = 'node_modules'
 let g:ctrlp_show_hidden = 1
 
 " Setup Prettier with ALE
