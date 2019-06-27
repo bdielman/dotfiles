@@ -27,13 +27,6 @@ command! Wq :wq
 " For mistyping noh constantly
 command! Noh :noh
 
-" Shortcuts to make file navigation easier
-cnoremap %% <C-R>=expand('%:h').'/'<cr>
-map <leader>ew :e %%
-map <leader>es :sp %%
-map <leader>ev :vsp %%
-map <leader>et :tabe %%
-
 " Keep buffers around after closing
 set hidden
 
