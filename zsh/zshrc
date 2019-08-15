@@ -1,0 +1,90 @@
+# Setup path for function autoloading
+fpath=($HOME/.zsh/func $fpath)
+typeset -U fpath
+
+# Set custom prompt
+setopt PROMPT_SUBST
+autoload -U promptinit
+promptinit
+
+# Initialize completion
+autoload -Uz compinit && compinit -i
+
+# Initialize colors
+autoload -U colors
+colors
+
+# Completion settings
+setopt auto_menu
+setopt complete_in_word
+setopt always_to_end
+zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
+zstyle ':completion:*' list-colors ''
+
+# Colorize terminal
+# export LSCOLORS="ExGxBxDxCxEgEdxbxgxcxd"
+
+# Nicer history
+export HISTFILE="$HOME/.zsh_history"
+export HISTSIZE=100000
+export SAVEHIST=$HISTSIZE
+setopt append_history
+setopt extended_history
+setopt hist_ignore_dups
+setopt hist_ignore_space
+setopt hist_verify
+setopt inc_append_history
+setopt share_history
+
+# Use MacVim as the editor
+export EDITOR="mvim -v"
+
+# By default, zsh considers many characters part of a word (e.g., _ and -).
+# Narrow that down to allow easier skipping through words via M-f and M-b.
+export WORDCHARS='*?[]~&;!$%^<>'
+
+# Highlight search results in ack.
+export ACK_COLOR_MATCH='green'
+
+# Safe way to use binstubs
+# export PATH=".git/safe/../../bin:$PATH"
+
+# Customize prompt
+source $HOME/.dotfiles/git/git_prompt
+
+ZSH_THEME_GIT_PROMPT_PREFIX=""
+ZSH_THEME_GIT_PROMPT_SUFFIX=""
+ZSH_THEME_GIT_PROMPT_DIRTY=" %{$reset_color%}!"
+ZSH_THEME_GIT_PROMPT_BEHIND_REMOTE=" -"
+ZSH_THEME_GIT_PROMPT_AHEAD_REMOTE=" +"
+ZSH_THEME_GIT_PROMPT_DIVERGED_REMOTE=" ±"
+ZSH_THEME_GIT_PROMPT_STASHED=" $"
+ZSH_THEME_GIT_PROMPT_UNTRACKED="?"
+local good_bad="%(?,, %{$fg_bold[red]%}x%{$reset_color%})"
+
+NEWLINE=$'\n'
+PROMPT='${NEWLINE}%{$fg_bold[cyan]%}%~%{$reset_color%} %{$fg_bold[yellow]%}[$(rbenv version-name)]%{$reset_color%}${good_bad} %{$fg_bold[magenta]%}❯%{$reset_color%} '
+RPROMPT='%{$fg_bold[green]%}$(git_prompt_info)$(git_prompt_status)$(git_remote_status)%{$reset_color%}'
+
+# Older version of Elasticsearch
+export PATH="/usr/local/opt/elasticsearch@5.6/bin:$PATH"
+
+#GPG
+# export GPG_TTY=$(tty)
+
+# Add rbenv to PATH
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+
+# Add nodenv to PATH
+if which nodenv > /dev/null; then eval "$(nodenv init -)"; fi
+
+# Include Yarn
+export PATH="$PATH:`yarn global bin`"
+
+# https://openradar.appspot.com/27348363
+# This is a fix for macOS Sierra
+# -A flag adds all identities stored in keychain
+ssh-add -A &> /dev/null
+
+# Source functions and aliases
+source ~/.dotfiles/zsh/aliases

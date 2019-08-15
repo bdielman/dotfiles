@@ -9,8 +9,7 @@ function relink() {
 
 cd ~
 
-relink .bash_profile ~/.dotfiles/bash/bash_profile
-relink .bashrc ~/.dotfiles/bash/bashrc
+relink .zshrc ~/.dotfiles/zsh/zshrc
 relink .git-completion.sh ~/.dotfiles/git/git-completion.sh
 relink .gitconfig ~/.dotfiles/git/gitconfig
 relink .gitignore_global ~/.dotfiles/git/gitignore_global
