@@ -60,10 +60,10 @@ ZSH_THEME_GIT_PROMPT_AHEAD_REMOTE=" +"
 ZSH_THEME_GIT_PROMPT_DIVERGED_REMOTE=" ±"
 ZSH_THEME_GIT_PROMPT_STASHED=" $"
 ZSH_THEME_GIT_PROMPT_UNTRACKED="?"
-local good_bad="%(?,, %{$fg_bold[red]%}x%{$reset_color%})"
+local good_bad="%(?, %{$fg_bold[magenta]%}❯%{$reset_color%}, %{$fg_bold[red]%}❯%{$reset_color%})"
 
 NEWLINE=$'\n'
-PROMPT='${NEWLINE}%{$fg_bold[cyan]%}%~%{$reset_color%} %{$fg_bold[yellow]%}[$(rbenv version-name)]%{$reset_color%}${good_bad} %{$fg_bold[magenta]%}❯%{$reset_color%} '
+PROMPT='${NEWLINE}%{$fg_bold[cyan]%}%~%{$reset_color%} %{$fg_bold[yellow]%}[$(rbenv version-name)]%{$reset_color%}${good_bad} '
 RPROMPT='%{$fg_bold[green]%}$(git_prompt_info)$(git_prompt_status)$(git_remote_status)%{$reset_color%}'
 
 # Older version of Elasticsearch
