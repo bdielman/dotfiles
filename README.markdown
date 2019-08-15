@@ -58,6 +58,7 @@ Running the symlinkit script will delete (if they already exist) and recreate th
 
 I have a few people to thank for help and inspiration in getting this up and running:
 
+* [Branden Wiegand](https://github.com/wiegand)
 * [Nate Klaiber](https://github.com/nateklaiber)
 * [Joe Fiorini](https://github.com/joefiorini)
 * [Jonathan Penn](https://github.com/jonathanpenn)
