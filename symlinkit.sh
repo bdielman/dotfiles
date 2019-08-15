@@ -10,7 +10,6 @@ function relink() {
 cd ~
 
 relink .zshrc ~/.dotfiles/zsh/zshrc
-relink .git-completion.sh ~/.dotfiles/git/git-completion.sh
 relink .gitconfig ~/.dotfiles/git/gitconfig
 relink .gitignore_global ~/.dotfiles/git/gitignore_global
 relink .vimrc ~/.dotfiles/vim/vimrc
