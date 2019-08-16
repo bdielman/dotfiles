@@ -63,11 +63,17 @@ RPROMPT='%{$fg_bold[green]%}$(git_prompt_info)$(git_prompt_status)$(git_remote_s
 # Older version of Elasticsearch
 export PATH="/usr/local/opt/elasticsearch@5.6/bin:$PATH"
 
-# Add rbenv to PATH
-if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+# Setup rbenv
+# http://mattgreensmith.net/2014/12/25/speed-up-rbenv-init-via-background-rehashing/
+# passing the rehash arg, and backgrounding the standard rehash speeds shell
+# load time significantly!
+eval "$(rbenv init --no-rehash -)"
+(rbenv rehash &) 2> /dev/null
 
-# Add nodenv to PATH
-if which nodenv > /dev/null; then eval "$(nodenv init -)"; fi
+# Setup nodenv
+# eval "$(nodenv init -)"
+eval "$(nodenv init - --no-rehash)"
+(nodenv rehash &) 2> /dev/null
 
 # https://openradar.appspot.com/27348363
 # This is a fix for macOS Sierra
