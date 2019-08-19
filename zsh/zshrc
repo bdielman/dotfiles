@@ -57,8 +57,8 @@ ZSH_THEME_GIT_PROMPT_UNTRACKED="?"
 local good_bad="%(?, %{$fg_bold[magenta]%}❯%{$reset_color%}, %{$fg_bold[red]%}❯%{$reset_color%})"
 
 NEWLINE=$'\n'
-PROMPT='${NEWLINE}%{$fg_bold[cyan]%}%~%{$reset_color%} %{$fg_bold[yellow]%}[$(rbenv version-name)]%{$reset_color%}${good_bad} '
-RPROMPT='%{$fg_bold[green]%}$(git_prompt_info)$(git_prompt_status)$(git_remote_status)%{$reset_color%}'
+PROMPT='${NEWLINE}%{$fg_bold[cyan]%}%~%{$reset_color%} %{$fg_bold[red]%}[$(rbenv version-name)]%{$reset_color%} %{$fg_bold[green]%}[$(nodenv version-name)]%{$reset_color%}${good_bad} '
+RPROMPT='%{$fg_bold[yellow]%}$(git_prompt_info)$(git_prompt_status)$(git_remote_status)%{$reset_color%}'
 
 # Older version of Elasticsearch
 export PATH="/usr/local/opt/elasticsearch@5.6/bin:$PATH"
