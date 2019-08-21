@@ -5,7 +5,7 @@
 ### Prerequisites
 
 * Git (2.0+)
-* Vim (8.0+) - MacVim installed via [Homebrew](https://brew.sh)
+* Vim (8.0+) - Vim installed via [Homebrew](https://brew.sh)
 
 ### The Setup
 
