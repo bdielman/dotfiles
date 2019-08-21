@@ -34,7 +34,7 @@ setopt inc_append_history
 setopt share_history
 
 # Use MacVim as the editor
-export EDITOR="mvim -v"
+export EDITOR="vim"
 
 # By default, zsh considers many characters part of a word (e.g., _ and -).
 # Narrow that down to allow easier skipping through words via M-f and M-b.

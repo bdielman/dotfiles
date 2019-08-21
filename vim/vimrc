@@ -45,20 +45,11 @@ set number
 " Yank from the cursor to the end of the line, to be consistent with C and D.
 nnoremap Y y$
 
-" Set GUI options
-if has("gui_running")
-  " Highlight current column
-  set cursorcolumn
+" Highlight current column
+set cursorcolumn
 
-  " Highlight current line
-  set cursorline
-
-  " Get rid of toolbar in MacVim
-  set guioptions=c guioptions-=TeLr
-
-  " Set font
-  set guifont=Source\ Code\ Pro:h14
-end
+" Highlight current line
+set cursorline
 
 " Set commandbar height
 set cmdheight=2

@@ -20,7 +20,7 @@
   undo = reset --soft HEAD^
 [core]
   excludesfile = /Users/braddielman/.gitignore_global
-  editor = mvim -v
+  editor = vim
   quotepath = false
   autocrlf = input
 [color]
@@ -30,16 +30,16 @@
 [web]
   browser = open
 [diff]
-  tool = mvimdiff
+  tool = vimdiff
 [difftool]
   prompt = false
-[difftool "mvimdiff"]
-  cmd = mvim -f -d \"$LOCAL\" \"$REMOTE\"
+[difftool "vimdiff"]
+  cmd = vim -f -d \"$LOCAL\" \"$REMOTE\"
 [merge]
-  tool = mvimdiff
+  tool = vimdiff
 [mergetool]
   prompt = false
-[mergetool "mvimdiff"]
-  cmd = mvim -f -c \"Gvdiff\" \"$MERGED\"
+[mergetool "vimdiff"]
+  cmd = vim -f -c \"Gvdiff\" \"$MERGED\"
 [include]
   path = ~/.git_secrets/secrets

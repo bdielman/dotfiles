@@ -1,6 +1,3 @@
-# MacVim
-alias vim="mvim -v"
-
 # Directory Stuff
 alias ..="cd .."
 alias cdd="cd -"
@@ -49,12 +46,6 @@ alias apachelog="tail -f /usr/local/var/log/httpd/error_log"
 alias ulimfix="ulimit -n 1200"
 
 # Functions
-cdvim () {
-  (
-    cd $1 && mvim .
-  )
-}
-
 add-host() {
   echo $* | sudo tee -a /etc/hosts
 }
