@@ -72,6 +72,9 @@ set colorcolumn=80
 " Make omnicomplete a bit easier
 imap <Leader>o <C-x><C-o>
 
+" Make backspace work as expected
+set backspace=indent,eol,start
+
 " Searching
 set hlsearch
 set incsearch
