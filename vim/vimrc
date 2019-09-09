@@ -132,6 +132,7 @@ let g:ale_fixers = {
       \ 'css': ['prettier'],
       \ 'scss': ['prettier'],
       \ 'javascript': ['prettier'],
+      \ 'typescript': ['prettier'],
       \ 'json': ['prettier']
       \ }
 let g:ale_javascript_prettier_use_local_config = 1

@@ -14,6 +14,7 @@ call minpac#add('w0rp/ale')
 call minpac#add('vim-airline/vim-airline')
 
 " Syntax highlighting
+call minpac#add('ianks/vim-tsx')
 call minpac#add('leafgarland/typescript-vim')
 call minpac#add('mxw/vim-jsx')
 call minpac#add('othree/html5.vim')
