@@ -11,7 +11,8 @@ call minpac#add('tpope/vim-fugitive')
 call minpac#add('tpope/vim-rhubarb')
 call minpac#add('tpope/vim-surround')
 call minpac#add('w0rp/ale')
-call minpac#add('vim-airline/vim-airline')
+" call minpac#add('vim-airline/vim-airline')
+call minpac#add('itchyny/lightline.vim')
 
 " Syntax highlighting
 call minpac#add('ianks/vim-tsx')
