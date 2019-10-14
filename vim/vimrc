@@ -121,8 +121,9 @@ let g:gruvbox_contrast = 'medium'
 " PLUGINS
 " ------------------------
 
-" Set Github Domains
+" Fugitive settings
 let g:fugitive_github_domains = ['https://example.com']
+let g:fugitive_dynamic_colors = 0
 
 " Add JSX support for js files
 let g:jsx_ext_required = 0
