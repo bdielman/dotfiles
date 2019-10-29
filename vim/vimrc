@@ -109,9 +109,9 @@ set t_vb=
 " COLORSCHEMES
 " ------------------------
 
-if (has("termguicolors"))
-  set termguicolors
-endif
+" if (has("termguicolors"))
+"   set termguicolors
+" endif
 
 colorscheme gruvbox
 set background=dark
