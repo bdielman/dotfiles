@@ -124,7 +124,6 @@ nmap <leader>d :let &background = ( &background == 'dark'? 'light' : 'dark' )<CR
 " ------------------------
 
 " Fugitive settings
-let g:fugitive_github_domains = ['https://example.com']
 let g:fugitive_dynamic_colors = 0
 
 " Add JSX support for js files
