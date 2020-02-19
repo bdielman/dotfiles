@@ -145,6 +145,7 @@ let g:ale_fixers = {
       \ 'scss': ['prettier'],
       \ 'javascript': ['prettier'],
       \ 'typescript': ['prettier'],
+      \ 'typescriptreact': ['prettier'],
       \ 'json': ['prettier'],
       \ 'ruby': ['prettier']
       \ }
