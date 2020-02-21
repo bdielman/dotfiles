@@ -60,9 +60,6 @@ NEWLINE=$'\n'
 PROMPT='${NEWLINE}%{$fg_bold[cyan]%}%~%{$reset_color%} %{$fg_bold[red]%}[$(rbenv version-name)]%{$reset_color%} %{$fg_bold[green]%}[$(nodenv version-name)]%{$reset_color%}${good_bad} '
 RPROMPT='%{$fg_bold[yellow]%}$(git_prompt_info)$(git_prompt_status)$(git_remote_status)%{$reset_color%}'
 
-# Older version of Elasticsearch
-export PATH="/usr/local/opt/elasticsearch@5.6/bin:$PATH"
-
 # Setup rbenv
 # http://mattgreensmith.net/2014/12/25/speed-up-rbenv-init-via-background-rehashing/
 # passing the rehash arg, and backgrounding the standard rehash speeds shell
