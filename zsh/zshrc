@@ -79,3 +79,6 @@ ssh-add -A &> /dev/null
 
 # Source functions and aliases
 source ~/.dotfiles/zsh/aliases
+
+# Setup ENV variables for Python/virtualenv
+export PIP_REQUIRE_VIRTUALENV=true
