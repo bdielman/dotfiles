@@ -46,10 +46,10 @@ set number
 nnoremap Y y$
 
 " Highlight current column
-set cursorcolumn
+" set cursorcolumn
 
 " Highlight current line
-set cursorline
+" set cursorline
 
 " Set commandbar height
 set cmdheight=2
@@ -116,6 +116,7 @@ set t_vb=
 " Dracula theme
 packadd! vim
 let g:dracula_italic = 0
+let g:dracula_colorterm = 0
 colorscheme dracula
 
 " Gruvbox theme
