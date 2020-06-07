@@ -23,6 +23,8 @@
   editor = vim
   quotepath = false
   autocrlf = input
+[pull]
+  rebase = false
 [color]
   ui = true
 [pretty]
