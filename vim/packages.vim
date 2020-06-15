@@ -11,7 +11,7 @@ call minpac#add('tpope/vim-fugitive')
 call minpac#add('tpope/vim-rhubarb')
 call minpac#add('tpope/vim-surround')
 call minpac#add('vim-airline/vim-airline')
-call minpac#add('w0rp/ale')
+call minpac#add('dense-analysis/ale')
 
 " Syntax highlighting
 call minpac#add('leafgarland/typescript-vim')
