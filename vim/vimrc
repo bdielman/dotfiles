@@ -114,13 +114,13 @@ if (has("termguicolors"))
 endif
 
 " Dracula theme
-" packadd! vim
-" let g:dracula_italic = 0
-" colorscheme dracula
+packadd! vim
+let g:dracula_italic = 0
+colorscheme dracula
 
 " Gruvbox theme
-colorscheme gruvbox
-set background=dark
+" colorscheme gruvbox
+" set background=dark
 
 " Toggle background color
 " nmap <leader>d :let &background = ( &background == 'dark'? 'light' : 'dark' )<CR>
