@@ -37,7 +37,7 @@ set lazyredraw
 set showcmd
 
 " Prevent mode from displaying
-set noshowmode
+" set noshowmode
 
 " Add line numbers
 set number
@@ -171,7 +171,32 @@ let g:user_emmet_settings = {
       \ },
       \ }
 
-" Airline settings
-let g:airline_powerline_fonts = 1
-let g:airline#extensions#tabline#enabled = 1
-let g:airline#extensions#tabline#formatter = 'short_path'
+" Lighline settings
+let g:lightline = {
+      \ 'colorscheme': 'gruvbox',
+      \ 'active': {
+      \   'left': [ [ 'mode', 'paste' ],
+      \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
+      \ },
+      \ 'component': {
+      \   'lineinfo': ' %3l:%-2v',
+      \ },
+      \ 'component_function': {
+      \   'readonly': 'LightlineReadonly',
+      \   'gitbranch': 'LightlineFugitive'
+      \ },
+      \ 'separator': { 'left': '', 'right': '' },
+      \ 'subseparator': { 'left': '', 'right': '' }
+      \ }
+
+function! LightlineReadonly()
+  return &readonly ? '' : ''
+endfunction
+
+function! LightlineFugitive()
+  if exists('*FugitiveHead')
+    let branch = FugitiveHead()
+    return branch !=# '' ? ' '.branch : ''
+  endif
+  return ''
+endfunction
