@@ -71,6 +71,7 @@ set colorcolumn=80
 
 " Make omnicomplete a bit easier
 imap <Leader>o <C-x><C-o>
+set completeopt=menu,menuone,preview,noselect,noinsert
 
 " Make backspace work as expected
 set backspace=indent,eol,start
