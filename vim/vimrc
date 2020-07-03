@@ -46,10 +46,10 @@ set number
 nnoremap Y y$
 
 " Highlight current column
-set cursorcolumn
+" set cursorcolumn
 
 " Highlight current line
-set cursorline
+" set cursorline
 
 " Set commandbar height
 set cmdheight=2
@@ -115,14 +115,14 @@ set t_vb=
 " endif
 
 " Dracula theme
-" packadd! vim
-" let g:dracula_colorterm = 0
-" let g:dracula_italic = 0
-" colorscheme dracula
+packadd! vim
+let g:dracula_colorterm = 0
+let g:dracula_italic = 0
+colorscheme dracula
 
 " Gruvbox theme
-colorscheme gruvbox
-set background=dark
+" colorscheme gruvbox
+" set background=dark
 
 " Toggle background color
 " nmap <leader>d :let &background = ( &background == 'dark'? 'light' : 'dark' )<CR>
@@ -174,7 +174,7 @@ let g:user_emmet_settings = {
 
 " Lighline settings
 let g:lightline = {
-      \ 'colorscheme': 'gruvbox',
+      \ 'colorscheme': 'dracula',
       \ 'active': {
       \   'left': [ [ 'mode', 'paste' ],
       \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
