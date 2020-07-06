@@ -14,8 +14,8 @@ call minpac#add('tpope/vim-surround')
 call minpac#add('dense-analysis/ale')
 
 " Syntax highlighting
-call minpac#add('leafgarland/typescript-vim')
-call minpac#add('mxw/vim-jsx')
+call minpac#add('HerringtonDarkholme/yats.vim')
+call minpac#add('MaxMEllon/vim-jsx-pretty')
 call minpac#add('othree/html5.vim')
 call minpac#add('pangloss/vim-javascript')
 call minpac#add('slim-template/vim-slim')
