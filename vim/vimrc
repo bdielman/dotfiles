@@ -12,8 +12,8 @@ filetype on
 filetype plugin on
 filetype indent on
 
-" Turn on syntax highlighting
-syntax on
+" Enable syntax highlighting
+syntax enable
 
 " Remap leader
 let mapleader = ","
