@@ -110,14 +110,14 @@ set t_vb=
 " COLORSCHEMES
 " ------------------------
 
-" if (has("termguicolors"))
-"   set termguicolors
-" endif
+if (has("termguicolors"))
+  set termguicolors
+endif
 
 " Dracula theme
 packadd! vim
-let g:dracula_colorterm = 0
-let g:dracula_italic = 0
+" let g:dracula_colorterm = 0
+" let g:dracula_italic = 0
 colorscheme dracula
 
 " Gruvbox theme
