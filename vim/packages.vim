@@ -20,8 +20,6 @@ call minpac#add('othree/html5.vim')
 call minpac#add('pangloss/vim-javascript')
 call minpac#add('slim-template/vim-slim')
 call minpac#add('tpope/vim-liquid')
-call minpac#add('tpope/vim-haml')
-call minpac#add('tpope/vim-markdown')
 
 " Colorschemes
 call minpac#add('gruvbox-community/gruvbox')
