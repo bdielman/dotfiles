@@ -5,13 +5,13 @@ call minpac#add('k-takata/minpac', {'type': 'opt'})
 
 " Utilities
 call minpac#add('ctrlpvim/ctrlp.vim')
+call minpac#add('itchyny/lightline.vim')
 call minpac#add('mattn/emmet-vim')
 call minpac#add('tpope/vim-commentary')
 call minpac#add('tpope/vim-fugitive')
 call minpac#add('tpope/vim-rhubarb')
 call minpac#add('tpope/vim-surround')
 call minpac#add('dense-analysis/ale')
-call minpac#add('vim-airline/vim-airline')
 
 " Syntax highlighting
 call minpac#add('HerringtonDarkholme/yats.vim')
