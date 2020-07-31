@@ -106,13 +106,16 @@ set noerrorbells
 set visualbell
 set t_vb=
 
+" add jbuilder syntax highlighting
+au BufNewFile,BufRead *.json.jbuilder set ft=ruby
+
 
 " COLORSCHEMES
 " ------------------------
 
-" if (has("termguicolors"))
-"   set termguicolors
-" endif
+if (has("termguicolors"))
+  set termguicolors
+endif
 
 " Dracula theme
 " packadd! vim
@@ -122,6 +125,7 @@ set t_vb=
 
 " Gruvbox theme
 colorscheme gruvbox
+let g:gruvbox_italic = 1
 set background=dark
 
 " Toggle background color
