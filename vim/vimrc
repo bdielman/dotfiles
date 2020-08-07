@@ -109,6 +109,10 @@ set t_vb=
 " add jbuilder syntax highlighting
 au BufNewFile,BufRead *.json.jbuilder set ft=ruby
 
+" Set split position
+set splitbelow
+set splitright
+
 
 " COLORSCHEMES
 " ------------------------
