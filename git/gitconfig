@@ -41,6 +41,7 @@
   tool = vimdiff
 [mergetool]
   prompt = false
+  keepBackup = false
 [mergetool "vimdiff"]
   cmd = vim -f -c \"Gvdiff\" \"$MERGED\"
 [include]
