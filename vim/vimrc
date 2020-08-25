@@ -110,8 +110,8 @@ set t_vb=
 au BufNewFile,BufRead *.json.jbuilder set ft=ruby
 
 " Set split position
-set splitbelow
-set splitright
+" set splitbelow
+" set splitright
 
 
 " COLORSCHEMES
