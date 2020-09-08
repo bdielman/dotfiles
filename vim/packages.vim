@@ -12,7 +12,6 @@ call minpac#add('tpope/vim-endwise')
 call minpac#add('tpope/vim-fugitive')
 call minpac#add('tpope/vim-rhubarb')
 call minpac#add('tpope/vim-surround')
-call minpac#add('tpope/vim-vinegar')
 call minpac#add('vim-airline/vim-airline')
 
 " Syntax highlighting
