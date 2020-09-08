@@ -46,7 +46,7 @@ set number
 nnoremap Y y$
 
 " Highlight current column
-set cursorcolumn
+" set cursorcolumn
 
 " Highlight current line
 set cursorline
@@ -122,15 +122,15 @@ if (has("termguicolors"))
 endif
 
 " Dracula theme
-" packadd! vim
-" let g:dracula_colorterm = 0
-" let g:dracula_italic = 0
-" colorscheme dracula
+packadd! vim
+colorscheme dracula
+" disables line highlight, but keeps `CursorLineNr`
+hi clear CursorLine
 
 " Gruvbox theme
-colorscheme gruvbox
-let g:gruvbox_italic = 1
-set background=dark
+" colorscheme gruvbox
+" let g:gruvbox_italic = 1
+" set background=dark
 
 " Toggle background color
 " nmap <leader>d :let &background = ( &background == 'dark'? 'light' : 'dark' )<CR>
