@@ -33,7 +33,7 @@ setopt hist_verify
 setopt inc_append_history
 setopt share_history
 
-# Use MacVim as the editor
+# Use Vim as the editor
 export EDITOR="vim"
 
 # By default, zsh considers many characters part of a word (e.g., _ and -).

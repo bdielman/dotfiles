@@ -46,7 +46,7 @@ set number
 nnoremap Y y$
 
 " Highlight current column
-" set cursorcolumn
+set cursorcolumn
 
 " Highlight current line
 set cursorline
@@ -109,28 +109,25 @@ set t_vb=
 " add jbuilder syntax highlighting
 au BufNewFile,BufRead *.json.jbuilder set ft=ruby
 
-" Set split position
-" set splitbelow
-" set splitright
-
 
 " COLORSCHEMES
 " ------------------------
 
-if (has("termguicolors"))
-  set termguicolors
-endif
+" if (has("termguicolors"))
+"   set termguicolors
+" endif
 
 " Dracula theme
-packadd! vim
-colorscheme dracula
+" packadd! vim
+" let g:dracula_italic = 0
+" let g:dracula_colorterm = 0
+" colorscheme dracula
 " disables line highlight, but keeps `CursorLineNr`
-hi clear CursorLine
+" hi clear CursorLine
 
 " Gruvbox theme
-" colorscheme gruvbox
-" let g:gruvbox_italic = 1
-" set background=dark
+colorscheme gruvbox
+set background=dark
 
 " Toggle background color
 " nmap <leader>d :let &background = ( &background == 'dark'? 'light' : 'dark' )<CR>
