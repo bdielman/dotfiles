@@ -113,19 +113,18 @@ au BufNewFile,BufRead *.json.jbuilder set ft=ruby
 " COLORSCHEMES
 " ------------------------
 
-" if (has("termguicolors"))
-"   set termguicolors
-" endif
+if (has("termguicolors"))
+  set termguicolors
+endif
 
 " Dracula theme
 " packadd! vim
-" let g:dracula_italic = 0
-" let g:dracula_colorterm = 0
 " colorscheme dracula
 " disables line highlight, but keeps `CursorLineNr`
 " hi clear CursorLine
 
 " Gruvbox theme
+let g:gruvbox_italic = 1
 colorscheme gruvbox
 set background=dark
 
@@ -145,7 +144,8 @@ let g:jsx_ext_required = 0
 " Allow CtrlP to ignore certain directories and include dotfiles
 let g:ctrlp_show_hidden = 1
 let g:ctrlp_custom_ignore = {
-      \ 'dir':  '\v[\/]((\.(git|bundle))|(node_modules|tmp|log|vendor\/bundle))'
+      \ 'dir':  '\v[\/]((\.(git|bundle))|(node_modules|tmp|log|vendor\/bundle))',
+      \ 'file': '\v(\.exe|\.so|\.dll|\.DS_Store|\.db|COMMIT_EDITMSG)$'
       \ }
 
 " Setup Prettier with ALE

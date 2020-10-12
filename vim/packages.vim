@@ -23,8 +23,8 @@ call minpac#add('slim-template/vim-slim')
 call minpac#add('tpope/vim-liquid')
 
 " Colorschemes
-call minpac#add('gruvbox-community/gruvbox')
 call minpac#add('dracula/vim')
+call minpac#add('gruvbox-community/gruvbox')
 
 " Minpac commands
 command! PackUpdate call minpac#update()
