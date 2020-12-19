@@ -118,15 +118,17 @@ if (has("termguicolors"))
 endif
 
 " Dracula theme
-" packadd! vim
-" colorscheme dracula
+packadd! vim
+" let g:dracula_colorterm = 0
+" let g:dracula_italic = 0
+colorscheme dracula
 " disables line highlight, but keeps `CursorLineNr`
-" hi clear CursorLine
+hi clear CursorLine
 
 " Gruvbox theme
-let g:gruvbox_italic = 1
-colorscheme gruvbox
-set background=dark
+" let g:gruvbox_italic = 1
+" colorscheme gruvbox
+" set background=dark
 
 " Toggle background color
 " nmap <leader>d :let &background = ( &background == 'dark'? 'light' : 'dark' )<CR>
