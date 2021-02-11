@@ -72,6 +72,14 @@ eval "$(rbenv init --no-rehash -)"
 eval "$(nodenv init - --no-rehash)"
 (nodenv rehash &) 2> /dev/null
 
+# Setup pyenv
+# eval "$(pyenv init -)"
+eval "$(pyenv init - --no-rehash)"
+(pyenv rehash &) 2> /dev/null
+export PYENV_VIRTUALENV_DISABLE_PROMPT=1
+# and install pyenv-virtualenv
+eval "$(pyenv virtualenv-init -)"
+
 # https://openradar.appspot.com/27348363
 # This is a fix for macOS Sierra
 # -A flag adds all identities stored in keychain
