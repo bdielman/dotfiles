@@ -31,18 +31,18 @@
   nice = "%C(yellow)%h%C(reset) %C(white)%s%C(cyan)%d%C(reset) -- %an; %ar"
 [web]
   browser = open
-[diff]
-  tool = vimdiff
-[difftool]
-  prompt = false
-[difftool "vimdiff"]
-  cmd = vim -f -d \"$LOCAL\" \"$REMOTE\"
-[merge]
-  tool = vimdiff
-[mergetool]
-  prompt = false
-  keepBackup = false
-[mergetool "vimdiff"]
-  cmd = vim -f -c \"Gvdiff\" \"$MERGED\"
 [include]
   path = ~/.git_secrets/secrets
+[diff]
+  tool = Kaleidoscope
+[difftool "Kaleidoscope"]
+  cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
+[difftool]
+  prompt = false
+[merge]
+  tool = Kaleidoscope
+[mergetool "Kaleidoscope"]
+  cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
+  trustExitCode = true
+[mergetool]
+  prompt = false
