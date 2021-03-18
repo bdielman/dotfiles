@@ -123,7 +123,7 @@ packadd! vim
 " let g:dracula_italic = 0
 colorscheme dracula
 " disables line highlight, but keeps `CursorLineNr`
-hi clear CursorLine
+" hi clear CursorLine
 
 " Gruvbox theme
 " let g:gruvbox_italic = 1
