@@ -1,6 +1,6 @@
 # My Dotfiles Setup
 
-## How to setup on a new machine
+## Setup
 
 ### Prerequisites
 
