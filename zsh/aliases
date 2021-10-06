@@ -25,6 +25,9 @@ alias be="bundle exec"
 alias dt="cd ~/Desktop"
 alias www="cd ~/Sites"
 alias dot="cd ~/.dotfiles"
+alias ops="cd ~/Sites/utees-operations"
+alias um="cd ~/Sites/utees-dot-com"
+alias amp="cd ~/Sites/amp"
 
 # Serve static
 alias sstatic="python -m SimpleHTTPServer"
