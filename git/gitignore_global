@@ -43,6 +43,7 @@ nbproject
 *.sublime-project
 *.sublime-workspace
 .nova
+.vscode
 
 # SASS Cache
 ######################
