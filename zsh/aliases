@@ -33,6 +33,9 @@ alias dot="cd ~/.dotfiles"
 # Serve static
 alias sstatic="python -m SimpleHTTPServer"
 
+# Overmind shortcut
+alias overdev="overmind start -f Procfile.dev"
+
 # Postgres
 # alias pgstart="pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start"
 # alias pgstop="pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log stop"
@@ -61,4 +64,21 @@ gw() {
     str="$(git log --color -1 --pretty=format:"$format" -- "$f")"
     printf "$f}$str\n"
   done | column -s '}' -t
+}
+
+# Heroku scripts
+download_db() {
+  heroku pg:backups:capture --app $1;
+  heroku pg:backups:download --app $1;
+  pg_restore --verbose --clean --no-acl --no-owner -h localhost -U $3 -d $2 latest.dump;
+  rm latest.dump;
+}
+
+update_db() {
+  heroku pg:backups:capture --app $1;
+}
+
+restore_pg() {
+  pg_restore --verbose --clean --no-acl --no-owner -h localhost -U $2 -d $1 latest.dump;
+  rm latest.dump;
 }

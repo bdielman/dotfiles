@@ -34,15 +34,14 @@
 [include]
   path = ~/.git_secrets/secrets
 [diff]
-  tool = Kaleidoscope
-[difftool "Kaleidoscope"]
-  cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
+  tool = vimdiff
+[difftool "vimdiff"]
+  cmd = vim -f -d \"$LOCAL\" \"$REMOTE\"
 [difftool]
   prompt = false
 [merge]
   tool = Kaleidoscope
-[mergetool "Kaleidoscope"]
-  cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
-  trustExitCode = true
+[mergetool "vimdiff"]
+  cmd = vim -f -c \"Gvdiff\" \"$MERGED\"
 [mergetool]
   prompt = false

@@ -10,6 +10,14 @@ promptinit
 # Initialize completion
 autoload -Uz compinit && compinit -i
 
+# if type brew &>/dev/null
+# then
+#   FPATH="$(brew --prefix)/share/zsh/site-functions:${FPATH}"
+
+#   autoload -Uz compinit
+#   compinit
+# fi
+
 # Initialize colors
 autoload -U colors
 colors
@@ -60,36 +68,51 @@ NEWLINE=$'\n'
 PROMPT='${NEWLINE}%{$fg_bold[cyan]%}%~%{$reset_color%} %{$fg_bold[red]%}[$(rbenv version-name)]%{$reset_color%} %{$fg_bold[green]%}[$(nodenv version-name)]%{$reset_color%}${good_bad} '
 RPROMPT='%{$fg_bold[yellow]%}$(git_prompt_info)$(git_prompt_status)$(git_remote_status)%{$reset_color%}'
 
+# Setup Homebrew
+eval $(/opt/homebrew/bin/brew shellenv)
+
 # Setup rbenv
 # http://mattgreensmith.net/2014/12/25/speed-up-rbenv-init-via-background-rehashing/
 # passing the rehash arg, and backgrounding the standard rehash speeds shell
 # load time significantly!
-eval "$(rbenv init --no-rehash -)"
-(rbenv rehash &) 2> /dev/null
+# eval "$(rbenv init --no-rehash -)"
+# (rbenv rehash &) 2> /dev/null
+eval "$(rbenv init - zsh)"
 
 # Setup nodenv
-# eval "$(nodenv init -)"
-eval "$(nodenv init - --no-rehash)"
-(nodenv rehash &) 2> /dev/null
+eval "$(nodenv init -)"
+# eval "$(nodenv init - --no-rehash)"
+# (nodenv rehash &) 2> /dev/null
+
+# Link up Postgres
+export PATH="/opt/homebrew/opt/postgresql@12/bin:$PATH"
+export LDFLAGS="-L/opt/homebrew/opt/postgresql@12/lib"
+export CPPFLAGS="-I/opt/homebrew/opt/postgresql@12/include"
+export PKG_CONFIG_PATH="/opt/homebrew/opt/postgresql@12/lib/pkgconfig"
 
 # Setup pyenv
-export PYENV_ROOT="$HOME/.pyenv"
-export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init --path)"
+# export PYENV_ROOT="$HOME/.pyenv"
+# export PATH="$PYENV_ROOT/bin:$PATH"
+# eval "$(pyenv init --path)"
+
 # eval "$(pyenv init -)"
-eval "$(pyenv init - --no-rehash)"
-(pyenv rehash &) 2> /dev/null
-export PYENV_VIRTUALENV_DISABLE_PROMPT=1
+
+# eval "$(pyenv init - --no-rehash)"
+# (pyenv rehash &) 2> /dev/null
+# export PYENV_VIRTUALENV_DISABLE_PROMPT=1
+
 # and install pyenv-virtualenv
-eval "$(pyenv virtualenv-init -)"
+
+# eval "$(pyenv virtualenv-init -)"
 
 # https://openradar.appspot.com/27348363
 # This is a fix for macOS Sierra
 # -A flag adds all identities stored in keychain
-ssh-add -A &> /dev/null
+ssh-add --apple-use-keychain ~/.ssh/id_ed25519 2> /dev/null
+ssh-add --apple-use-keychain ~/.ssh/id_ed25519_heroku 2> /dev/null
 
 # Source functions and aliases
 source ~/.dotfiles/zsh/aliases
 
 # Setup ENV variables for Python/virtualenv
-export PIP_REQUIRE_VIRTUALENV=true
+# export PIP_REQUIRE_VIRTUALENV=true
