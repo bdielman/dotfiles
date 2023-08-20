@@ -1,22 +1,26 @@
+# Setup Homebrew
+eval $(/opt/homebrew/bin/brew shellenv)
+
 # Setup path for function autoloading
-fpath=($HOME/.zsh/func $fpath)
-typeset -U fpath
+# fpath=($HOME/.zsh/func $fpath)
+# typeset -U fpath
+
+# Initialize completion
+# autoload -Uz compinit && compinit -i
+
+if type brew &>/dev/null
+then
+  FPATH="$(brew --prefix)/share/zsh/site-functions:${FPATH}"
+  typeset -U fpath
+
+  autoload -Uz compinit
+  compinit
+fi
 
 # Set custom prompt
 setopt PROMPT_SUBST
 autoload -U promptinit
 promptinit
-
-# Initialize completion
-autoload -Uz compinit && compinit -i
-
-# if type brew &>/dev/null
-# then
-#   FPATH="$(brew --prefix)/share/zsh/site-functions:${FPATH}"
-
-#   autoload -Uz compinit
-#   compinit
-# fi
 
 # Initialize colors
 autoload -U colors
@@ -69,7 +73,7 @@ PROMPT='${NEWLINE}%{$fg_bold[cyan]%}%~%{$reset_color%} %{$fg_bold[red]%}[$(rbenv
 RPROMPT='%{$fg_bold[yellow]%}$(git_prompt_info)$(git_prompt_status)$(git_remote_status)%{$reset_color%}'
 
 # Setup Homebrew
-eval $(/opt/homebrew/bin/brew shellenv)
+# eval $(/opt/homebrew/bin/brew shellenv)
 
 # Setup rbenv
 # http://mattgreensmith.net/2014/12/25/speed-up-rbenv-init-via-background-rehashing/
