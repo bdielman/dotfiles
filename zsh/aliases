@@ -74,6 +74,26 @@ download_db() {
   rm latest.dump;
 }
 
+# NOTE: download_db sundays-production sundays_development brandenwiegand
+function branden_download_db() {
+  # heroku pg:backups:capture --app $1;
+  # heroku pg:backups:download --app $1;
+
+  echo "Drop local DBs"
+  rails db:drop
+
+  echo "Create local DBs"
+  rails db:create
+
+  echo "Load schema (i.e. create tables without data)"
+  rails db:schema:load
+
+  table_allow_list=$(psql -X -t -c "SELECT STRING_AGG('-t ' || table_name, ' ') FROM information_schema.tables WHERE table_schema = 'public' AND table_name NOT ILIKE '%ahoy%';" $2)
+
+  echo "Restore data"
+  pg_restore ${=table_allow_list} --schema=public --disable-triggers --data-only --verbose --no-acl --no-owner -h localhost -U $3 -d $2 latest.dump;
+}
+
 update_db() {
   heroku pg:backups:capture --app $1;
 }
