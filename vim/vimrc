@@ -117,10 +117,9 @@ if (has("termguicolors"))
   set termguicolors
 endif
 
-" Dracula theme
-packadd! vim
-" let g:dracula_colorterm = 0
-colorscheme dracula
+" Catppuccin theme
+" packadd! vim
+colorscheme catppuccin_mocha
 
 " Gruvbox theme
 " let g:gruvbox_italic = 1
