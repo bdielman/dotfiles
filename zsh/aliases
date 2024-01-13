@@ -75,7 +75,7 @@ download_db() {
 }
 
 # NOTE: download_db sundays-production sundays_development brandenwiegand
-function branden_download_db() {
+function better_download_db() {
   # heroku pg:backups:capture --app $1;
   # heroku pg:backups:download --app $1;
 
