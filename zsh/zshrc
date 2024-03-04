@@ -39,8 +39,8 @@ setopt hist_verify
 setopt inc_append_history
 setopt share_history
 
-# Use Vim as the editor
-export EDITOR="vim"
+# Use Neovim as the editor
+export EDITOR="nvim"
 
 # By default, zsh considers many characters part of a word (e.g., _ and -).
 # Narrow that down to allow easier skipping through words via M-f and M-b.

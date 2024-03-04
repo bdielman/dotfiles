@@ -34,14 +34,14 @@
 [include]
   path = ~/.git_secrets/secrets
 [diff]
-  tool = vimdiff
-[difftool "vimdiff"]
-  cmd = vim -f -d \"$LOCAL\" \"$REMOTE\"
+  tool = nvimdiff
 [difftool]
   prompt = false
+[difftool "nvimdiff"]
+  cmd = "nvim -d \"$LOCAL\" \"$REMOTE\""
 [merge]
-  tool = Kaleidoscope
-[mergetool "vimdiff"]
-  cmd = vim -f -c \"Gvdiff\" \"$MERGED\"
+  tool = nvimdiff
 [mergetool]
-  prompt = false
+  prompt = true
+[mergetool "nvimdiff"]
+  cmd = vim -f -c \"Gvdiff\" \"$MERGED\"
