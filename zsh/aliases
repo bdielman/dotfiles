@@ -12,9 +12,11 @@ alias catn="cat -n"
 # Copy my public key to my clipboard
 alias pubkey="more ~/.ssh/id_rsa.pub | pbcopy | echo '=> Public key copied to pasteboard.'"
 
+# Alias vim to nvim
+alias vim="nvim"
+
 # Verify build and push to repo
 alias verifypush="be bin/verify-build && git push"
-
 
 # MySQL
 alias sqlstart="mysql.server start"

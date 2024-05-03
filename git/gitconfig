@@ -20,7 +20,7 @@
   undo = reset --soft HEAD^
 [core]
   excludesfile = /Users/braddielman/.gitignore_global
-  editor = vim
+  editor = nvim
   quotepath = false
   autocrlf = input
 [pull]
@@ -44,4 +44,4 @@
 [mergetool]
   prompt = true
 [mergetool "nvimdiff"]
-  cmd = vim -f -c \"Gvdiff\" \"$MERGED\"
+  cmd = nvim -f -c \"Gvdiff\" \"$MERGED\"
