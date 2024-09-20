@@ -74,7 +74,7 @@ eval "$(rbenv init - zsh)"
 eval "$(nodenv init -)"
 
 # Setup Postgres 16
-export PATH="/opt/homebrew/opt/postgresql@16/libexec/bin:$PATH"
+# export PATH="/opt/homebrew/opt/postgresql@16/libexec/bin:$PATH"
 
 # https://openradar.appspot.com/27348363
 # This is a fix for macOS Sierra
