@@ -79,7 +79,7 @@ download_db() {
 # NOTE: download_db [db_name]-production [db_name]_development [user_name]
 function better_download_db() {
   # heroku pg:backups:capture --app $1;
-  heroku pg:backups:download --app $1;
+  # heroku pg:backups:download --app $1;
 
   echo "Drop local DBs"
   rails db:drop
