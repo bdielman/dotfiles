@@ -18,13 +18,14 @@
   trim = !git remote prune origin && git gc
   who = shortlog -sn --
   undo = reset --soft HEAD^
+  pullr = pull --rebase
 [core]
   excludesfile = /Users/braddielman/.gitignore_global
   editor = nvim
   quotepath = false
   autocrlf = input
 [pull]
-	rebase = true
+	rebase = false
 [color]
   ui = true
 [pretty]
