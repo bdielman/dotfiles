@@ -24,7 +24,7 @@
   quotepath = false
   autocrlf = input
 [pull]
-  rebase = false
+	rebase = true
 [color]
   ui = true
 [pretty]

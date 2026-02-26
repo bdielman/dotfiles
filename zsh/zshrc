@@ -73,8 +73,14 @@ eval "$(rbenv init - zsh)"
 # Setup nodenv
 eval "$(nodenv init -)"
 
+# Setup direnv
+eval "$(direnv hook zsh)"
+
 # Setup Postgres 16
 # export PATH="/opt/homebrew/opt/postgresql@16/libexec/bin:$PATH"
+
+# Claude Code Paths
+export CLAUDE_CONFIG_DIR="$HOME/.claude-personal"
 
 # https://openradar.appspot.com/27348363
 # This is a fix for macOS Sierra
