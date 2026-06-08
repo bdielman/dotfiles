@@ -3,6 +3,7 @@
 --type-add=pug=.pug
 --type-add=markdown=.md,.markdown
 --ignore-dir=tmp
+--ignore-dir=builds
 --ignore-dir=node_modules
 --ignore-dir=packs-test
 --ignore-file=ext:log
